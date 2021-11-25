@@ -1,0 +1,91 @@
+.logo h1 {
+      color: "#231f20";
+      padding-top: 34px;
+      padding-left: 134px;
+}
+.logo {
+      color: "#231f20";
+}
+.header-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.header-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-basis: 50%;
+}
+.email {
+      font-family: MyriadPro;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.59;
+      letter-spacing: normal;
+      text-align: left;
+      color: #231f20;
+      margin-left: 200px;
+}
+.phone-number {
+      font-family: MyriadPro;
+      margin: 0 5px 30px 7px;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.59;
+      letter-spacing: normal;
+      text-align: left;
+      color: #231f20;
+      margin-bottom: 25px;
+}
+.nav-container {
+      display: flex;
+      justify-content: flex-end;
+}
+.nav-items {
+      display: flex;
+      list-style: none;
+      flex-basis: 40%;
+}
+.home {
+      width: 66px;
+      height: 31px;
+      margin: 0 32px 50px 14px;
+      font-family: MyriadPro;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.24;
+      letter-spacing: normal;
+      text-align: left;
+      color: #e86d1f;
+}
+.process {
+      width: 112px;
+      height: 27px;
+      margin: 34.1px 24px 49px 55px;
+      font-family: MyriadPro;
+      font-size: 22px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.23;
+      letter-spacing: normal;
+      text-align: left;
+      color: #231f20;
+}
+.logo {
+      float: left;
+      width: 120px;
+      height: 31px;
+      margin: 16px 24px 16px 0;
+      background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+      background: #fff;
+}
