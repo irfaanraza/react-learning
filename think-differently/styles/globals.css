@@ -1,21 +1,23 @@
-.logo h1 {
+.Col-1 h1 {
       color: "#231f20";
       padding-top: 34px;
       padding-left: 134px;
 }
-.logo {
+.Col-1 {
       color: "#231f20";
+      font-size: 24px;
 }
-.header-container {
+.Row {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 }
-.header-content {
+.Col-1-top {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       flex-basis: 50%;
+      margin-right: 30px;
 }
 .email {
       font-family: MyriadPro;
@@ -49,12 +51,10 @@
 .nav-items {
       display: flex;
       list-style: none;
-      flex-basis: 40%;
+      margin-top: 5px;
+      margin-right: 30px;
 }
-.home {
-      width: 66px;
-      height: 31px;
-      margin: 0 32px 50px 14px;
+.nav-items a {
       font-family: MyriadPro;
       font-size: 25px;
       font-weight: bold;
@@ -64,28 +64,14 @@
       letter-spacing: normal;
       text-align: left;
       color: #e86d1f;
+      list-style: none;
 }
-.process {
-      width: 112px;
-      height: 27px;
-      margin: 34.1px 24px 49px 55px;
-      font-family: MyriadPro;
-      font-size: 22px;
-      font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.23;
-      letter-spacing: normal;
-      text-align: left;
-      color: #231f20;
-}
-.logo {
-      float: left;
-      width: 120px;
-      height: 31px;
-      margin: 16px 24px 16px 0;
-      background: rgba(255, 255, 255, 0.2);
-}
-.site-layout .site-layout-background {
-      background: #fff;
+
+.Col-1-title {
+      color: "#e86d1f";
+      margin-top: 1px;
+      margin-left: 5px;
+      background-color: "black";
+      text-align: end;
+      margin-left: 20px;
 }
