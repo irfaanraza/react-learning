@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       return (
             <>
                   <AppHeader />
-                  <Herosection />
+                  {/* <Herosection /> */}
                   <main>{children}</main>
             </>
       );

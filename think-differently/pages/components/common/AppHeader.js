@@ -8,15 +8,13 @@ export const AppHeader = () => {
       return (
             <Layout className='container'>
                   <Row className='Row'>
-                        <Col span={6}>
+                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                               <div className='Col-1'>
                                     <h1>Think Differently</h1>
-                                    <Title className='Col-1-title' level={5}>
-                                          Business.Strategy.People.Profit
-                                    </Title>
+                                    <h5>Business.Strategy.People.Profit</h5>
                               </div>
                         </Col>
-                        <Col span={18}>
+                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                               <div className='Col-1-top'>
                                     <div className='email'>
                                           <Title level={4}>
@@ -34,7 +32,13 @@ export const AppHeader = () => {
                                     <Menu mode='inline' className='nav-items'>
                                           <Menu.Item key='home'>
                                                 <Link href='/home'>
-                                                      <a>Home</a>
+                                                      <a
+                                                            style={{
+                                                                  color: "#e86d1f",
+                                                            }}
+                                                      >
+                                                            Home
+                                                      </a>
                                                 </Link>
                                           </Menu.Item>
                                           <Menu.Item key='process'>

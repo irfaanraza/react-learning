@@ -1,8 +1,13 @@
- const HomePage = () => {
+import { AppHeader } from "../components/common/AppHeader";
+import { Herosection } from "../components/common/Herosection";
+import { WhoWeAre } from "./../components/WhoWeAre";
+
+const HomePage = () => {
       return (
-            <div>
-                  <h1>Home Page</h1>
-            </div>
+            <>
+                  <Herosection />
+                  <WhoWeAre />
+            </>
       );
 };
 export default HomePage;
