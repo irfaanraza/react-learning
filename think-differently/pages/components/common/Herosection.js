@@ -2,7 +2,7 @@ import { Button, Image } from "antd";
 import banner from "../../../public/assets/banner.jpg";
 export const Herosection = () => {
       return (
-            <div classame='banner'>
+            <div className='banner'>
                   <Image
                         src={banner.src}
                         className='banner-img'

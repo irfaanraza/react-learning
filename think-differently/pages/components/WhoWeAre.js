@@ -1,22 +1,19 @@
 import { Row, Col, Layout } from "antd";
 export const WhoWeAre = () => {
       return (
-            <Row gutter={15}>
+            <Row gutter={15} style={{ backgroundColor: "grey" }}>
                   <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-
-                        <div className='col-1-content'>
+                        <div>
                               <h1>Who we are</h1>
                               <Row>
                                     <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                                           <div>
-                                                <h1>
-                                                      15
-                                                </h1>
-
+                                                <h1>15</h1>
                                           </div>
-
                                     </Col>
-                                    <Col xs={2} sm={4} md={6} lg={8} xl={12}>years based in Rosedale</Col>
+                                    <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                                          years based in Rosedale
+                                    </Col>
                               </Row>
                               {/* <div className='col-1-content-2'>
                                           <h1>15</h1>
@@ -25,7 +22,7 @@ export const WhoWeAre = () => {
                         </div>
                   </Col>
                   <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-                        <div className='col-2-content'>
+                        <div>
                               <h1>Content</h1>
                         </div>
                   </Col>
