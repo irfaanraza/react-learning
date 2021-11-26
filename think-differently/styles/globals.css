@@ -123,7 +123,7 @@
       padding: 20px;
       box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.16);
       background-color: #fff;
-      bottom: -20px;
+      bottom: -25px;
       left: 70px;
 }
 .banner-caption h1 {
@@ -159,7 +159,7 @@
       margin-top: 15px;
       margin-bottom: 10px;
 }
-.wh-row {
+/* .wh-row {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
@@ -203,4 +203,17 @@
 }
 .col-2-content {
       background-color: aqua;
+} */
+.whoweare h1 {
+      background-color: blueviolet;
+      padding-top: 30px;
+      text-align: center;
+}
+.number h1 {
+      font-size: 55px;
+      text-align: end;
+}
+.whoweare-text h3 {
+      text-align: left;
+      background-color: crimson;
 }
