@@ -205,15 +205,39 @@
       background-color: aqua;
 } */
 .whoweare h1 {
-      background-color: blueviolet;
-      padding-top: 30px;
+      font-family: MyriadPro;
+      font-size: 50px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.24;
+      letter-spacing: normal;
       text-align: center;
+      color: #231f20;
+      padding-top: 30px;
 }
 .number h1 {
-      font-size: 55px;
       text-align: end;
+      font-stretch: expanded;
+
+      font-size: 45px;
 }
 .whoweare-text h3 {
+      font-family: MyriadPro;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
       text-align: left;
-      background-color: crimson;
+      color: #e86d1f;
+      font-stretch: extra-expanded;
+}
+.whoweare-content {
+      background-color: blueviolet;
+}
+.sidebanner {
+      height: 700px;
+      width: 350px;
 }
