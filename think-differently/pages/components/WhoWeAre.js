@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-export const WhoWeAre = () => {
+export const WhoWeAre = ({ title, captiontitle, caption }) => {
       return (
             <>
                   {/* <Row gutter={15} align='center'>
@@ -28,7 +28,7 @@ export const WhoWeAre = () => {
                   <Row gutter={15} justify='center'>
                         <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                               <div className='whoweare'>
-                                    <h1>Who we are</h1>
+                                    <h1>{title}</h1>
                                     <Row gutter={10} align='middle'>
                                           <Col
                                                 xs={2}
@@ -38,15 +38,8 @@ export const WhoWeAre = () => {
                                                 xl={12}
                                           >
                                                 <div className='number'>
-                                                      <h1
-                                                            style={{
-                                                                  fontSize: 45,
-                                                                  fontWeight:
-                                                                        "700",
-                                                            }}
-                                                      >
-                                                            15
-                                                      </h1>
+                                                      <h3>{captiontitle}</h3>
+                                                      <h3> {caption}</h3>
                                                 </div>
                                           </Col>
                                           <Col
@@ -57,10 +50,7 @@ export const WhoWeAre = () => {
                                                 xl={12}
                                           >
                                                 <div className='whoweare-text'>
-                                                      <h3>
-                                                            years<br></br> based
-                                                            in <br></br>Rosedale
-                                                      </h3>
+                                                      {/* <h3>{captiontitle}</h3> */}
                                                 </div>
                                           </Col>
                                     </Row>
@@ -68,10 +58,8 @@ export const WhoWeAre = () => {
                         </Col>
                         <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                               <div className='whoweare-content'>
-                                    <h3>
-                                          To Think Differently, First We Need To
-                                          Think
-                                    </h3>
+                                    <h3>{captiontitle}</h3>
+
                                     <p>
                                           In today's business world of
                                           smartphones email, texts and all sort

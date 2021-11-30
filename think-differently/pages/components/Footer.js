@@ -1,8 +1,8 @@
-import { Dropdown, Row, Col } from "antd"
+import { Dropdown, Row, Col, Button, Divider } from "antd";
+import Link from "next/link";
 
 export const Footer = () => {
       return (
-
             <Row>
                   <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                         <form>
@@ -20,25 +20,24 @@ export const Footer = () => {
                         <Link>Blog</Link>
                         <Divider />
                         <div>
-                              <h1>Contact Details <h1>
-                                    <div>
-                                          <p>
-                                                021431990</p>
-                                          <p>irfan.rza65@gmail.com</p>
-                                          <address>
-                                                Suite A, 1st Floor, Building 6, 331 Rosedale road
-                                                Albany, Auckland 0632, New Zealand
-                                          </address>
-                                    </div>
-                              </div>
-                                    <div>
-                                          <p>
-                                                © 2021 Think Differently, All right Reserved
-                                          </p>
-                                    </div>
-                              </Col>
-                        </Row>
-                        );
-                        
-}
+                              <h1>Contact Details</h1>
+                              <div>
+                                    <p> 021431990</p>
 
+                                    <p>irfan.rza65@gmail.com</p>
+                                    <address>
+                                          Suite A, 1st Floor, Building 6, 331
+                                          Rosedale road Albany, Auckland 0632,
+                                          New Zealand
+                                    </address>
+                              </div>
+                        </div>
+                        <div>
+                              <p>
+                                    © 2021 Think Differently, All right Reserved
+                              </p>
+                        </div>
+                  </Col>
+            </Row>
+      );
+};

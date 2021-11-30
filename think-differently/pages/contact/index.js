@@ -1,8 +1,14 @@
+import { Herosection } from "../components/common/Herosection";
+import { GetInTouch } from "../components/GetInTouch";
+import { OurTestimonials } from "../components/OurTestimonials";
+
 const ContactPage = () => {
       return (
-            <div>
-                  <h1>Contact Page</h1>
-            </div>
+            <>
+                  <Herosection />
+                  <GetInTouch />
+                  <OurTestimonials />
+            </>
       );
 };
 export default ContactPage;

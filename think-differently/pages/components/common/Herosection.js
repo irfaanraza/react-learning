@@ -1,6 +1,6 @@
 import { Button, Image } from "antd";
 import banner from "../../../public/assets/banner.jpg";
-export const Herosection = () => {
+export const Herosection = ({ title, caption }) => {
       return (
             <div className='banner'>
                   <Image
@@ -9,11 +9,8 @@ export const Herosection = () => {
                         preview={false}
                   />
                   <div className='banner-caption'>
-                        <h1>To Achieve Business Success</h1>
-                        <p>
-                              In an Environment of Accelerating Change We Weed
-                              To Think Differently
-                        </p>
+                        <h1>{title}</h1>
+                        <p>{caption}</p>
                         <Button className='btn-contact'>Contact Us</Button>
                   </div>
             </div>

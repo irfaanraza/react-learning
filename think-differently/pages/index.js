@@ -1,3 +1,4 @@
+import "~antd/dist/antd.css";
 import Link from "next/link";
 import { Herosection } from "./components/common/Herosection";
 import HomePage from "./home/index";

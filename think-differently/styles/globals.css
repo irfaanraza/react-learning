@@ -58,14 +58,13 @@
       .ant-menu-item
       > .ant-menu-title-content {
       overflow: auto;
-      text-overflow: inherit;
+      text-overflow: auto;
 }
-.nav-items.ant-menu-inline .ant-menu-item {
-      width: auto;
-}
+
 .nav-items.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
       background-color: "#fff";
 }
+
 .nav-items a {
       font-family: MyriadPro;
       font-size: 25px;
@@ -240,4 +239,21 @@
 .sidebanner {
       height: 700px;
       width: 350px;
+}
+
+.ant-menu .ant-menu-item a {
+      font-size: 12px;
+}
+
+.ant-menu .ant-menu-item {
+      background-color: transparent !important;
+}
+.card-container {
+      display: inline;
+      justify-content: center;
+      flex-direction: row;
+      padding: 10px;
+}
+.card-item {
+      background-color: tomato;
 }
