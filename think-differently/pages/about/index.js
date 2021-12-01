@@ -15,7 +15,7 @@ const AboutPage = () => {
                   <WhoWeAre
                         title='Phil Pickford '
                         captiontitle='I Team Member'
-                        caption='I am Always telling my clients "Its all about you" And it is'
+                        captionpara='I am Always telling my clients "Its all about you" And it is'
                   />
                   <WhyYouShouldCare title='About Phil Pickford' />
                   <BusinessHistory
@@ -24,7 +24,17 @@ const AboutPage = () => {
                         caption='2007'
                   />
                   <Missions />
-                  <OurTestimonials />
+                  <OurTestimonials
+                        title='Our Testimonials'
+                        caption='Mike Wardlaw'
+                        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                        tenetur error,'
+                  />
             </>
       );
 };

@@ -11,7 +11,7 @@ export const Herosection = ({ title, caption }) => {
                   <div className='banner-caption'>
                         <h1>{title}</h1>
                         <p>{caption}</p>
-                        <Button className='btn-contact'>Contact Us</Button>
+                        <Button className='btncontact'>Contact Us</Button>
                   </div>
             </div>
       );

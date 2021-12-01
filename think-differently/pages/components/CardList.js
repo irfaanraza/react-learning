@@ -1,3 +1,5 @@
+import { Card, Row, Col, Divider } from "antd";
+
 import businessmeeting from "../../public/assets/businessmeeting.png";
 import amazonprinciple from "../../public/assets/amazonprinciple.jpg";
 import businessplan2020 from "../../public/assets/businessplan2020.jpg";
@@ -59,10 +61,12 @@ export const CardList = () => {
       ];
 
       return (
-            <div>
-                  {blogs.map((blog, index) => {
-                        return <CardComponent blog={blog} key={index} />;
-                  })}
+            <div className='card-container'>
+                  <Row gutter={[20, 20]}>
+                        {blogs.map((blog, index) => {
+                              return <CardComponent blog={blog} key={index} />;
+                        })}
+                  </Row>
             </div>
       );
 };

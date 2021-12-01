@@ -6,11 +6,10 @@ export const CardComponent = (props) => {
       console.log("Image xheck in component : ", props.blog.img);
 
       return (
-            <div className='card-container'>
+            <Col xs={2} sm={4} md={6} lg={6} xl={8}>
                   <Card
                         className='card-item'
                         hoverable
-                        style={{ width: 240 }}
                         cover={<img alt='example' src={props.blog.img.src} />}
                   >
                         <Meta
@@ -20,6 +19,6 @@ export const CardComponent = (props) => {
                               date={props.date}
                         />
                   </Card>
-            </div>
+            </Col>
       );
 };
