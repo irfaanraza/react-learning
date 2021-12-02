@@ -10,7 +10,14 @@ export const CardComponent = (props) => {
                   <Card
                         className='card-item'
                         hoverable
-                        cover={<img alt='example' src={props.blog.img.src} />}
+                        cover={
+                              <img
+                                    alt='example'
+                                    src={props.blog.img.src}
+                                    width='300'
+                                    height='300'
+                              />
+                        }
                   >
                         <Meta
                               title={props.blog.title}

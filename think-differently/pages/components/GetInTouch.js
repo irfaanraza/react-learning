@@ -1,4 +1,5 @@
 import { Row, Col, Form, Divider, Button, Input } from "antd";
+import { ContactDetails } from "./ContactDetails";
 export const GetInTouch = () => {
       return (
             <div className='contactus-container'>
@@ -24,10 +25,10 @@ export const GetInTouch = () => {
                                                 md={6}
                                                 lg={8}
                                                 xl={12}
-                                                style={{
-                                                      margin: -150,
-                                                      marginTop: 0,
-                                                }}
+                                                // style={{
+                                                //       margin: -150,
+                                                //       marginTop: 0,
+                                                // }}
                                           >
                                                 <Form.Item label='Email'>
                                                       <input type='text' />
@@ -51,10 +52,10 @@ export const GetInTouch = () => {
                                                 md={6}
                                                 lg={8}
                                                 xl={12}
-                                                style={{
-                                                      margin: -150,
-                                                      marginTop: 0,
-                                                }}
+                                                // style={{
+                                                //       margin: -150,
+                                                //       marginTop: 0,
+                                                // }}
                                           >
                                                 <Form.Item label='Phone'>
                                                       <input type='text' />
@@ -63,7 +64,7 @@ export const GetInTouch = () => {
                                     </Row>
                                     <Form.Item
                                           label='Message'
-                                          style={{ width: "50%" }}
+                                          style={{ width: "80%" }}
                                     >
                                           <Input.TextArea />
                                     </Form.Item>
@@ -76,13 +77,13 @@ export const GetInTouch = () => {
                                           type='vertical'
                                           style={{
                                                 borderColor: "black",
-                                                height: 200,
+                                                height: 250,
                                           }}
                                     />
                               </Col>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={11}>
-                                    Think Differently
-                              </Col>
+                              <div>
+                                    <ContactDetails />
+                              </div>
                         </Row>
                   </Form>
             </div>
