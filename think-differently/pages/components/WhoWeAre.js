@@ -9,13 +9,13 @@ export const WhoWeAre = ({
       return (
             <>
                   <Row gutter={10} justify='center'>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <div className='whoweare'>
                                     <h1>{title}</h1>
                                     <Row gutter={10} align='middle'>
                                           <Col
-                                                xs={2}
-                                                sm={4}
+                                                xs={16}
+                                                sm={16}
                                                 md={6}
                                                 lg={8}
                                                 xl={12}
@@ -33,10 +33,10 @@ export const WhoWeAre = ({
                                                 </h3>
                                           </Col>
                                           <Col
-                                                xs={2}
-                                                sm={4}
-                                                md={6}
-                                                lg={8}
+                                                xs={8}
+                                                sm={8}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                           >
                                                 <div className='whoweare-text'>
@@ -46,7 +46,7 @@ export const WhoWeAre = ({
                                     </Row>
                               </div>
                         </Col>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <div className='whoweare-content'>
                                     <h2>{content}</h2>
 

@@ -2,8 +2,8 @@ import { Row, Col, Divider } from "antd";
 export const OurBlogs = () => {
       return (
             <div className='ourblog-container'>
-                  <Row gutter={50}>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
+                  <Row gutter={10}>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                               <h1>Our Blogs</h1>
                               <Divider
                                     style={{
@@ -29,7 +29,7 @@ export const OurBlogs = () => {
                                     ipsum debitis quas aliquid
                               </p>
                         </Col>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                               <h1>Our Blogs</h1>
                               <Divider
                                     style={{
@@ -54,7 +54,7 @@ export const OurBlogs = () => {
                                     ipsum debitis quas aliquid
                               </p>
                         </Col>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                               <h1>Our Blogs</h1>
                               <Divider
                                     style={{

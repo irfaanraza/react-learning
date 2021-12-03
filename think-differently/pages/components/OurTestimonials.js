@@ -5,88 +5,82 @@ export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
       console.log("title arha ha ya nai", title);
       return (
             <div className='testimonials-container'>
-                  <Row align='middle' gutter={2}>
-                        <div className='image-content-container'>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-                                    <h1> {title}</h1>
-                                    <h3> {caption}</h3>
-                                    <h5>{captiontitle}</h5>
+                  <Row align='middle' gutter={10}>
+                        <Col xs={24} sm={24} md={6} lg={12} xl={12}>
+                              <h1> {title}</h1>
+                              <h3> {caption}</h3>
+                              <h5>{captiontitle}</h5>
 
-                                    <p>{content}</p>
+                              <p>{content}</p>
+                              <div
+                                    style={{
+                                          display: "flex",
+                                          justifyContent: "center",
+                                    }}
+                              >
                                     <div
                                           style={{
                                                 display: "flex",
-                                                justifyContent: "center",
+                                                width: 65,
+                                                paddingRight: 22,
                                           }}
                                     >
-                                          <div
+                                          <Divider
+                                                type='horizontal'
                                                 style={{
-                                                      display: "flex",
-                                                      width: 65,
-                                                      paddingRight: 22,
-                                                }}
-                                          >
-                                                <Divider
-                                                      type='horizontal'
-                                                      style={{
-                                                            borderColor:
-                                                                  "black",
-                                                            borderWidth: 3,
-                                                      }}
-                                                />
-                                          </div>
-                                          <div
-                                                style={{
-                                                      display: "flex",
-                                                      width: 65,
-                                                      paddingRight: 10,
-                                                      paddingLeft: 10,
-                                                }}
-                                          >
-                                                <Divider
-                                                      type='horizontal'
-                                                      color=' #e86d1f'
-                                                      style={{
-                                                            borderColor:
-                                                                  "black",
-                                                            borderWidth: 3,
-                                                            borderColor:
-                                                                  "#e86d1f",
-                                                      }}
-                                                />
-                                          </div>
-                                          <div
-                                                style={{
-                                                      display: "flex",
-                                                      width: 65,
-                                                      paddingLeft: 20,
-                                                }}
-                                          >
-                                                <Divider
-                                                      type='horizontal'
-                                                      style={{
-                                                            borderColor:
-                                                                  "black",
-                                                            borderWidth: 3,
-                                                      }}
-                                                />
-                                          </div>
-                                    </div>
-                              </Col>
-
-                              <div className='ourtestimonials-image-container'>
-                                    <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-                                          <Image
-                                                src={testimonial.src}
-                                                preview={false}
-                                                style={{
-                                                      height: 400,
-                                                      width: 600,
+                                                      borderColor: "black",
+                                                      borderWidth: 3,
                                                 }}
                                           />
-                                    </Col>
+                                    </div>
+                                    <div
+                                          style={{
+                                                display: "flex",
+                                                width: 65,
+                                                paddingRight: 10,
+                                                paddingLeft: 10,
+                                          }}
+                                    >
+                                          <Divider
+                                                type='horizontal'
+                                                color=' #e86d1f'
+                                                style={{
+                                                      borderColor: "black",
+                                                      borderWidth: 3,
+                                                      borderColor: "#e86d1f",
+                                                }}
+                                          />
+                                    </div>
+                                    <div
+                                          style={{
+                                                display: "flex",
+                                                width: 65,
+                                                paddingLeft: 20,
+                                          }}
+                                    >
+                                          <Divider
+                                                type='horizontal'
+                                                style={{
+                                                      borderColor: "black",
+                                                      borderWidth: 3,
+                                                }}
+                                          />
+                                    </div>
                               </div>
-                        </div>
+                        </Col>
+
+                        <Col xs={24} sm={24} md={10} lg={12} xl={12}>
+                              <div className='ourtestimonials-image-container'>
+                                    <Image
+                                          src={testimonial.src}
+                                          preview={false}
+                                          // style={{
+                                          //       height: 400,
+                                          //       width: 600,
+                                          // }}
+                                    />
+                              </div>
+                        </Col>
 
                         <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
                               <div className='contactus'>

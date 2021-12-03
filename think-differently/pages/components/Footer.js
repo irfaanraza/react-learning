@@ -26,7 +26,7 @@ const { Option } = Select;
 export const Footer = () => {
       return (
             <div className='footer'>
-                  <Row justify='center' gutter={30}>
+                  <Row justify='center' gutter={10}>
                         <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <Form layout={"vertical"} className='chat-form'>
                                     <Row gutter={5}>
@@ -148,7 +148,7 @@ export const Footer = () => {
                                     </Row>
                               </Form>
                         </Col>
-                        <Col xs={24} sm={24} md={12} lg={12} xl={12} flex='1'>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <div className='row-container'>
                                     <h2> Quick Links</h2>
                                     <div className='links'>
@@ -242,7 +242,13 @@ export const Footer = () => {
                                           </div>
 
                                           <div className='social-icon-container'>
-                                                <Col>
+                                                <Col
+                                                      xs={24}
+                                                      sm={24}
+                                                      md={12}
+                                                      lg={12}
+                                                      xl={12}
+                                                >
                                                       <a className='social-icons'>
                                                             <FacebookFilled
                                                                   style={{

@@ -4,8 +4,8 @@ import sidebanner from "../../public/assets/sidebanner.jpg";
 export const WhyYouShouldCare = ({ title }) => {
       return (
             <div className='whycare-container'>
-                  <Row gutter={50}>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                  <Row gutter={10}>
+                        <Col xs={24} sm={24} md={6} lg={8} xl={12}>
                               <div className='image-container'>
                                     <Image
                                           src={sidebanner.src}
@@ -13,7 +13,7 @@ export const WhyYouShouldCare = ({ title }) => {
                                     />
                               </div>
                         </Col>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                        <Col xs={24} sm={24} md={6} lg={8} xl={12}>
                               <div className='whycare-content'>
                                     <h1>{title}</h1>
                                     <p>
@@ -33,28 +33,6 @@ export const WhyYouShouldCare = ({ title }) => {
                                           leader? Do you sleep well? Are you
                                           happy with your revenue? Are you happy
                                           with your profits? Are your people
-                                          performing to their potential,
-                                          everyday? Are you happy with your
-                                          strategy? Are you executing it,
-                                          relentlessly? Are you comfortable as
-                                          leader? Do you sleep well? Are you
-                                          happy with your revenue? Are you happy
-                                          with your profits? Are your people
-                                          performing to their potential,
-                                          everyday? Are you happy with your
-                                          strategy? Are you executing it,
-                                          relentlessly? Are you comfortable as
-                                          leader? Do you sleep well?Are you
-                                          happy with your revenue? Are you happy
-                                          with your profits? Are your people
-                                          performing to their potential,
-                                          everyday? Are you happy with your
-                                          strategy? Are you executing it,
-                                          relentlessly? Are you comfortable as
-                                          leader? Do you sleep well?Are you
-                                          happy with your revenue? Are you happy
-                                          with your profits? Are your people
-                                          performing to their potential,
                                           everyday? Are you happy with your
                                           strategy? Are you executing it,
                                           relentlessly? Are you comfortable as

@@ -5,27 +5,20 @@
 }
 body {
       background-color: #fff;
-}
-
-.Row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      overflow-x: hidden;
 }
 .Col-1-top {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      flex-basis: 50%;
-      margin-right: 30px;
-      margin-top: 12px;
+      /* flex-basis: 50%; 
+      /* margin-right: 30px;
+      margin-top: 12px; */
 }
+
 .email {
       font-family: MyriadPro;
       font-size: 16px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.59;
       letter-spacing: normal;
       text-align: left;
@@ -45,10 +38,10 @@ body {
       color: #231f20;
       margin-bottom: 25px;
 }
-.nav-container {
+/* .nav-container {
       display: flex;
       justify-content: flex-end;
-}
+} */
 .nav-items {
       display: flex;
       list-style: none;
@@ -250,7 +243,7 @@ body {
 }
 
 .ant-menu .ant-menu-item a {
-      font-size: 12px;
+      font-size: 20px;
 }
 
 .ant-menu .ant-menu-item {
@@ -262,8 +255,7 @@ body {
       flex-direction: row;
       padding: 70px 30px;
 }
-.card-item {
-}
+
 .ant-row-center {
       justify-content: center;
       align-items: center;
@@ -293,7 +285,7 @@ body {
       background-color: rgb(248, 242, 242);
 }
 .missions-container {
-      padding: 50px 20%;
+      padding: 35px 5%;
 }
 .image-container {
       display: flex;
@@ -317,7 +309,7 @@ body {
 }
 .testimonials-container {
       display: flex;
-      padding: 25px 20%;
+      padding: 35px 5%;
       background-color: rgb(248, 242, 242);
 }
 .ourtestimonialstext-container {
@@ -335,7 +327,7 @@ body {
       margin-top: 30px;
 }
 .image-content-container {
-      display: flex;
+      /* display: flex; */
 }
 .ant-btn.btncontact {
       background-color: black;
@@ -462,4 +454,157 @@ h6 {
 }
 .whycare-container {
       background-color: rgb(248, 242, 242);
+}
+.ant-menu-inline.ant-menu-root .ant-menu-item > .ant-menu-title-content,
+.ant-menu-inline.ant-menu-root
+      .ant-menu-submenu-title
+      > .ant-menu-title-content {
+      /* flex: auto; */
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+.strategy-container p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.whoweare-text {
+      padding-top: 60px;
+}
+@media only screen and (max-width: 768px) {
+      .Col-1 h5 {
+            font-size: 19px;
+            text-align: center !important;
+            margin-left: 100px !important;
+            margin-top: 0 !important;
+      }
+      .Col-1 h1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 900;
+            padding-left: 30px;
+      }
+      .email {
+            /* display: flex; */
+            font-family: MyriadPro;
+            font-size: 14px;
+
+            text-align: left;
+            margin-left: 200px;
+      }
+      .Col-1-top {
+            flex-basis: 100%;
+            padding-right: 200px;
+      }
+      .h4.ant-typography,
+      .ant-typography h4 {
+            margin-bottom: 0.5em;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.4;
+            /* margin-right: 20px; */
+            width: 180px;
+      }
+      .banner-caption {
+            position: absolute;
+            width: 220px;
+
+            /* overflow: hidden; */
+            padding: 20px;
+            box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.16);
+            background-color: #fff;
+            bottom: -25px;
+            left: 20px;
+      }
+      .banner-caption h1 {
+            font-size: 16px;
+      }
+      .banner-caption p {
+            font-size: 14px;
+      }
+      /* .nav-container {
+            display: flex;
+            justify-content: center;
+      } */
+      .nav-items {
+            display: flex;
+            list-style: none;
+            /* margin-top: 5px; */
+      }
+      .ant-menu .ant-menu-item a {
+            font-size: 8px;
+            display: flex;
+      }
+      .whoweare-content h2 {
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+      }
+      .whoweare-content p {
+            padding: 15px;
+            font-size: 20px;
+            text-align: justify;
+      }
+      .whycare-content p {
+            padding: 15px;
+            font-size: 20px;
+            text-align: justify;
+      }
+      .whycare-content h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+      }
+      .ourblog-container {
+            padding: 50px 5%;
+      }
+      .ourblog-container h1 {
+            font-size: 25px;
+            text-align: center;
+            text-transform: uppercase;
+      }
+      .ourblog-container p {
+            font-size: 20px;
+            text-align: justify;
+      }
+      .missions-container h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 15px;
+      }
+      .missions-container p {
+            font-size: 20px;
+            text-align: justify;
+      }
+      .strategy-container p {
+            font-size: 20px;
+            text-align: justify;
+      }
+      .strategy-container h1 {
+            font-size: 30px;
+            text-align: center;
+      }
+      .testimonials-container p {
+            font-size: 20px;
+            text-align: justify;
+      }
+      .testimonials-container h3 {
+            font-size: 18px;
+      }
+      .testimonials-container h5 {
+            font-size: 14px;
+      }
+      .testimonials-container h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+      }
+}
+
+@media only screen and (max-width: 1420px) {
+      .ant-menu .ant-menu-item a {
+            font-size: 13px;
+            display: flex;
+      }
 }

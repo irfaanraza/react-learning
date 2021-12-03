@@ -8,7 +8,7 @@ export const ContactDetails = () => {
       return (
             <div className='contactdetails-container'>
                   <Row>
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12}>
+                        <Col xs={24} sm={24} md={6} lg={8} xl={12}>
                               <div className='contactdetails-header'>
                                     <h2>Think Differently</h2>
                                     <h5>Business.Strategy.People.Profit</h5>

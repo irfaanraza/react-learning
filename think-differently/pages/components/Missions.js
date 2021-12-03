@@ -7,16 +7,15 @@ export const Missions = () => {
       return (
             <div className='missions-container'>
                   <Row gutter={10}>
-                        <div className='content-container'>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
-                                    <div className='icon-container'>
-                                          <Image
-                                                src={learning.src}
-                                                preview={false}
-                                                className='icon'
-                                          />
-                                    </div>
-
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                              <div className='icon-container'>
+                                    <Image
+                                          src={learning.src}
+                                          preview={false}
+                                          className='icon'
+                                    />
+                              </div>
+                              <div className='strategy-container'>
                                     <h1>Specialise in Strategy </h1>
                                     <p>
                                           It is a long established fact that a
@@ -27,15 +26,17 @@ export const Missions = () => {
                                           more-or-less normal distribution of
                                           letters,
                                     </p>
-                              </Col>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
-                                    <div className='icon-container'>
-                                          <Image
-                                                src={leadership.src}
-                                                preview={false}
-                                                className='icon'
-                                          />
-                                    </div>
+                              </div>
+                        </Col>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                              <div className='icon-container'>
+                                    <Image
+                                          src={leadership.src}
+                                          preview={false}
+                                          className='icon'
+                                    />
+                              </div>
+                              <div className='strategy-container'>
                                     <h1>One Goal Setting Too</h1>
                                     <p>
                                           It is a long established fact that a
@@ -46,18 +47,20 @@ export const Missions = () => {
                                           more-or-less normal distribution of
                                           letters,
                                     </p>
-                              </Col>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
-                                    <div
-                                          className='icon-container
+                              </div>
+                        </Col>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                              <div
+                                    className='icon-container
                                     '
-                                    >
-                                          <Image
-                                                src={goals.src}
-                                                preview={false}
-                                                className='icon'
-                                          />
-                                    </div>
+                              >
+                                    <Image
+                                          src={goals.src}
+                                          preview={false}
+                                          className='icon'
+                                    />
+                              </div>
+                              <div className='strategy-container'>
                                     <h1>Leadership Capabilities </h1>
                                     <p>
                                           It is a long established fact that a
@@ -68,8 +71,8 @@ export const Missions = () => {
                                           more-or-less normal distribution of
                                           letters,
                                     </p>
-                              </Col>
-                        </div>
+                              </div>
+                        </Col>
                   </Row>
             </div>
       );

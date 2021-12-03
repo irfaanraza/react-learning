@@ -6,7 +6,7 @@ export const CardComponent = (props) => {
       console.log("Image xheck in component : ", props.blog.img);
 
       return (
-            <Col xs={2} sm={4} md={6} lg={6} xl={8}>
+            <Col xs={24} sm={24} md={6} lg={6} xl={8}>
                   <Card
                         className='card-item'
                         hoverable

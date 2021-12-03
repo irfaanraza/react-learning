@@ -6,13 +6,13 @@ export const GetInTouch = () => {
                   <h2>Get in Touch with Us</h2>
                   <Form layout={"vertical"}>
                         <Row gutter={5}>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={11}>
+                              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <Row>
                                           <Col
-                                                xs={2}
-                                                sm={4}
-                                                md={6}
-                                                lg={8}
+                                                xs={24}
+                                                sm={24}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                           >
                                                 <Form.Item label='Name'>
@@ -20,10 +20,10 @@ export const GetInTouch = () => {
                                                 </Form.Item>
                                           </Col>
                                           <Col
-                                                xs={2}
-                                                sm={4}
-                                                md={6}
-                                                lg={8}
+                                                xs={24}
+                                                sm={24}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                                 // style={{
                                                 //       margin: -150,
@@ -36,10 +36,10 @@ export const GetInTouch = () => {
                                           </Col>
 
                                           <Col
-                                                xs={2}
-                                                sm={4}
-                                                md={6}
-                                                lg={8}
+                                                xs={24}
+                                                sm={24}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                           >
                                                 <Form.Item label='Last Name'>
@@ -47,10 +47,10 @@ export const GetInTouch = () => {
                                                 </Form.Item>
                                           </Col>
                                           <Col
-                                                xs={2}
-                                                sm={4}
-                                                md={6}
-                                                lg={8}
+                                                xs={24}
+                                                sm={24}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                                 // style={{
                                                 //       margin: -150,
@@ -72,7 +72,7 @@ export const GetInTouch = () => {
                                           Contact Us
                                     </Button>
                               </Col>
-                              <Col xs={2} sm={4} md={6} lg={8} xl={2}>
+                              <Col xs={24} sm={24} md={12} lg={6} xl={6}>
                                     <Divider
                                           type='vertical'
                                           style={{
