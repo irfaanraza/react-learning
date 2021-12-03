@@ -1,7 +1,7 @@
 import { Row, Col, Divider, Image, Button } from "antd";
 import testimonial from "../../public/assets/testimonial.jpg";
 
-export const OurTestimonials = ({ title, caption, content }) => {
+export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
       console.log("title arha ha ya nai", title);
       return (
             <div className='testimonials-container'>
@@ -10,8 +10,68 @@ export const OurTestimonials = ({ title, caption, content }) => {
                               <Col xs={2} sm={4} md={6} lg={8} xl={12}>
                                     <h1> {title}</h1>
                                     <h3> {caption}</h3>
+                                    <h5>{captiontitle}</h5>
 
                                     <p>{content}</p>
+                                    <div
+                                          style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                          }}
+                                    >
+                                          <div
+                                                style={{
+                                                      display: "flex",
+                                                      width: 65,
+                                                      paddingRight: 22,
+                                                }}
+                                          >
+                                                <Divider
+                                                      type='horizontal'
+                                                      style={{
+                                                            borderColor:
+                                                                  "black",
+                                                            borderWidth: 3,
+                                                      }}
+                                                />
+                                          </div>
+                                          <div
+                                                style={{
+                                                      display: "flex",
+                                                      width: 65,
+                                                      paddingRight: 10,
+                                                      paddingLeft: 10,
+                                                }}
+                                          >
+                                                <Divider
+                                                      type='horizontal'
+                                                      color=' #e86d1f'
+                                                      style={{
+                                                            borderColor:
+                                                                  "black",
+                                                            borderWidth: 3,
+                                                            borderColor:
+                                                                  "#e86d1f",
+                                                      }}
+                                                />
+                                          </div>
+                                          <div
+                                                style={{
+                                                      display: "flex",
+                                                      width: 65,
+                                                      paddingLeft: 20,
+                                                }}
+                                          >
+                                                <Divider
+                                                      type='horizontal'
+                                                      style={{
+                                                            borderColor:
+                                                                  "black",
+                                                            borderWidth: 3,
+                                                      }}
+                                                />
+                                          </div>
+                                    </div>
                               </Col>
 
                               <div className='ourtestimonials-image-container'>

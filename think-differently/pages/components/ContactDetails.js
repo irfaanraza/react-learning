@@ -27,6 +27,9 @@ export const ContactDetails = () => {
                                                             level={5}
                                                             style={{
                                                                   fontSize: 12,
+                                                                  color: "black",
+                                                                  fontWeight:
+                                                                        "700",
                                                             }}
                                                       >
                                                             021431990
@@ -44,6 +47,9 @@ export const ContactDetails = () => {
                                                             level={5}
                                                             style={{
                                                                   fontSize: 12,
+                                                                  color: "black",
+                                                                  fontWeight:
+                                                                        "700",
                                                             }}
                                                       >
                                                             irfan.rza65@gmail.com
@@ -61,6 +67,9 @@ export const ContactDetails = () => {
                                                             level={5}
                                                             style={{
                                                                   fontSize: 12,
+                                                                  color: "black",
+                                                                  fontWeight:
+                                                                        "700",
                                                             }}
                                                       >
                                                             Suit A, 1st Floor,
