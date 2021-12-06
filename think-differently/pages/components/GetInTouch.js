@@ -6,7 +6,7 @@ export const GetInTouch = () => {
                   <h2>Get in Touch with Us</h2>
                   <Form layout={"vertical"}>
                         <Row gutter={5}>
-                              <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                              <Col xs={24} sm={24} md={10} lg={12} xl={12}>
                                     <Row>
                                           <Col
                                                 xs={24}
@@ -72,7 +72,7 @@ export const GetInTouch = () => {
                                           Contact Us
                                     </Button>
                               </Col>
-                              <Col xs={24} sm={24} md={12} lg={6} xl={6}>
+                              <Col xs={24} sm={24} md={8} lg={6} xl={6}>
                                     <Divider
                                           type='vertical'
                                           style={{

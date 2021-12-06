@@ -8,13 +8,13 @@ export const AppHeader = () => {
       return (
             <Layout className='container'>
                   <Row className='Row'>
-                        <Col xs={24} sm={24} md={6} lg={10} xl={6}>
+                        <Col xs={24} sm={24} md={6} lg={6} xl={6}>
                               <div className='Col-1'>
                                     <h1>Think Differently</h1>
                                     <h5>Business.Strategy.People.Profit</h5>
                               </div>
                         </Col>
-                        <Col xs={24} sm={24} md={14} lg={12} xl={16}>
+                        <Col xs={24} sm={24} md={14} lg={10} xl={14}>
                               <div className='Col-1-top'>
                                     <div className='email'>
                                           <Title level={4}>
