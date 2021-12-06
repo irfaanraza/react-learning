@@ -8,18 +8,14 @@ export const ContactDetails = () => {
       return (
             <Row>
                   <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                        <div className='contactdetails-header'>
-                              <h2>Think Differently</h2>
-                              <h5>Business.Strategy.People.Profit</h5>
-                        </div>
+                        <div style={{ float: "inline-end" }}>
+                              <div className='contactdetails-header'>
+                                    <h1>Think Differently</h1>
+                                    <h5>Business.Strategy.People.Profit</h5>
+                              </div>
 
-                        <h3>Contact Details</h3>
-                        <div
-                              style={{
-                                    textAlign: "justify",
-                                    alignItems: "center",
-                              }}
-                        >
+                              <h2>Contact Details</h2>
+
                               <div>
                                     <Space direction='horizontal'>
                                           <PhoneOutlined
