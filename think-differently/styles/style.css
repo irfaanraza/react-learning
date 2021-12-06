@@ -244,6 +244,15 @@ body {
 
 .ant-menu .ant-menu-item a {
       font-size: 20px;
+      font-weight: 900;
+}
+.nav-container
+      .ant-menu
+      .ant-menu-root
+      .ant-menu-vertical
+      .ant-menu-light
+      .nav-items {
+      background-color: blue;
 }
 
 .ant-menu .ant-menu-item {
@@ -383,7 +392,11 @@ body {
       justify-content: space-between;
 }
 .contactdetails-header {
-      display: inline;
+      display: block;
+}
+contactdetails-header h2 {
+      text-align: left;
+      font-size: 16px;
 }
 .contactdetails-header h5 {
       padding: 0 70px;

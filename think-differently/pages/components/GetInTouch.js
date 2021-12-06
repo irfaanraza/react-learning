@@ -81,9 +81,11 @@ export const GetInTouch = () => {
                                           }}
                                     />
                               </Col>
-                              <div>
-                                    <ContactDetails />
-                              </div>
+                              <Col>
+                                    <div>
+                                          <ContactDetails />
+                                    </div>
+                              </Col>
                         </Row>
                   </Form>
             </div>

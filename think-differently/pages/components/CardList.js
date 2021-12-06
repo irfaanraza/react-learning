@@ -62,7 +62,7 @@ export const CardList = () => {
 
       return (
             <div className='card-container'>
-                  <Row gutter={[10, 10]}>
+                  <Row gutter={[5, 5]}>
                         {blogs.map((blog, index) => {
                               return <CardComponent blog={blog} key={index} />;
                         })}

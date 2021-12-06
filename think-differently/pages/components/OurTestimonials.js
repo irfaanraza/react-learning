@@ -6,7 +6,7 @@ export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
       return (
             <div className='testimonials-container'>
                   <Row align='middle' gutter={10}>
-                        <Col xs={24} sm={24} md={6} lg={12} xl={12}>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <h1> {title}</h1>
                               <h3> {caption}</h3>
                               <h5>{captiontitle}</h5>
@@ -69,7 +69,7 @@ export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
                               </div>
                         </Col>
 
-                        <Col xs={24} sm={24} md={10} lg={12} xl={12}>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                               <div className='ourtestimonials-image-container'>
                                     <Image
                                           src={testimonial.src}
