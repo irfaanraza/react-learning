@@ -6,12 +6,12 @@ export const GetInTouch = () => {
                   <h2>Get in Touch with Us</h2>
                   <Form layout={"vertical"}>
                         <Row gutter={5}>
-                              <Col xs={24} sm={24} md={10} lg={12} xl={12}>
+                              <Col xs={24} sm={24} md={8} lg={12} xl={12}>
                                     <Row>
                                           <Col
                                                 xs={24}
                                                 sm={24}
-                                                md={12}
+                                                md={8}
                                                 lg={12}
                                                 xl={12}
                                           >
@@ -64,7 +64,7 @@ export const GetInTouch = () => {
                                     </Row>
                                     <Form.Item
                                           label='Message'
-                                          style={{ width: "80%" }}
+                                          // style={{ width: "80%" }}
                                     >
                                           <Input.TextArea />
                                     </Form.Item>
@@ -72,7 +72,7 @@ export const GetInTouch = () => {
                                           Contact Us
                                     </Button>
                               </Col>
-                              <Col xs={24} sm={24} md={8} lg={6} xl={6}>
+                              <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                     <Divider
                                           type='vertical'
                                           style={{

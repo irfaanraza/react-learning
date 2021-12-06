@@ -29,7 +29,7 @@ export const AppHeader = () => {
                                     </div>
                               </div>
                               <div className='nav-container'>
-                                    <Menu mode='inline' className='nav-items'>
+                                    <Menu className='nav-items'>
                                           <Menu.Item key='home'>
                                                 <Link href='/home'>
                                                       <a
