@@ -14,10 +14,10 @@ export const WhoWeAre = ({
                                     <h1>{title}</h1>
                                     <Row gutter={10} align='middle'>
                                           <Col
-                                                xs={16}
-                                                sm={16}
-                                                md={6}
-                                                lg={8}
+                                                xs={12}
+                                                sm={12}
+                                                md={12}
+                                                lg={12}
                                                 xl={12}
                                           >
                                                 <div className='number'>
@@ -33,8 +33,8 @@ export const WhoWeAre = ({
                                                 </h3>
                                           </Col>
                                           <Col
-                                                xs={8}
-                                                sm={8}
+                                                xs={12}
+                                                sm={12}
                                                 md={12}
                                                 lg={12}
                                                 xl={12}

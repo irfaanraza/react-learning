@@ -218,7 +218,7 @@ body {
       letter-spacing: normal;
       text-align: center;
       color: #231f20;
-      padding-top: 30px;
+      /* padding-top: 30px; */
 }
 .number h1 {
       text-align: end;
@@ -305,9 +305,9 @@ body {
       padding: 5px;
 }
 .whycare-content h1 {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 900;
-      text-align: center;
+      /* text-align: center; */
 }
 .ourblog-container {
       padding: 35px 5%;
@@ -369,7 +369,8 @@ body {
 
 .contactus {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
       margin-top: 30px;
 }
 .image-content-container {
@@ -379,6 +380,7 @@ body {
       background-color: black;
       border-radius: 15px;
       color: white;
+      margin-bottom: 12px;
 }
 .ant-btn.btncontact span {
       background-color: black;
@@ -499,10 +501,10 @@ h6 {
 .row-container h2 {
       color: white !important;
 }
-.whycare-content {
+/* .whycare-content {
       padding-right: 30px;
       padding-top: 60px;
-}
+} */
 .whycare-container {
       background-color: rgb(248, 242, 242);
 }
@@ -521,7 +523,8 @@ h6 {
       padding: 5px;
 }
 .whoweare-text {
-      padding-top: 60px;
+      /* padding-top: 60px; */
+      padding-bottom: 30px;
 }
 .nav-items {
       display: flex;

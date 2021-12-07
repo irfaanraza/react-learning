@@ -1,10 +1,12 @@
 import { Row, Col, Form, Divider, Button, Input } from "antd";
 import { ContactDetails } from "./ContactDetails";
 export const GetInTouch = () => {
+      const [form] = Form.useForm();
+
       return (
             <div className='contactus-container'>
                   <h2>Get in Touch with Us</h2>
-                  <Form layout={"vertical"}>
+                  <Form layout={"vertical"} form={form}>
                         <Row gutter={5}>
                               <Col xs={24} sm={24} md={8} lg={12} xl={12}>
                                     <Row>

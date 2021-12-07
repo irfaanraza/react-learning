@@ -82,13 +82,34 @@ export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
                               </div>
                         </Col>
 
-                        <Col xs={2} sm={4} md={6} lg={8} xl={12} flex='2'>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                               <div className='contactus'>
-                                    <h1>Chat With Us?</h1>
+                                    <h1 id='chatwithus'>Chat With Us?</h1>
+                                    <div
+                                          style={{
+                                                // display: "flex",
+                                                width: 200,
+                                                // paddingLeft: 20,
+                                                // justifyContent: "space-around",
+                                          }}
+                                    >
+                                          <Divider
+                                                type='horizontal'
+                                                style={{
+                                                      borderColor: "#e86d1f",
+                                                      borderWidth: 3,
+                                                      marginTop: 10,
+                                                      marginLeft: 5,
+                                                      marginRight: 5,
+                                                }}
+                                          />
+                                    </div>
                                     <Button className='btncontact'>
                                           Contact Us
                                     </Button>
-                                    <h1>021431990</h1>
+                                    <h1 style={{ marginLeft: 10 }}>
+                                          021431990
+                                    </h1>
                               </div>
                         </Col>
                   </Row>
