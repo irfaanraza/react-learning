@@ -1,220 +1,354 @@
-@media only screen and (max-width: 768px) {
-      .ant-menu-vertical .ant-menu-item,
-      .ant-menu-vertical-left .ant-menu-item,
-      .ant-menu-vertical-right .ant-menu-item,
-      .ant-menu-inline .ant-menu-item,
-      .ant-menu-vertical .ant-menu-submenu-title,
-      .ant-menu-vertical-left .ant-menu-submenu-title,
-      .ant-menu-vertical-right .ant-menu-submenu-title,
-      .ant-menu-inline .ant-menu-submenu-title {
-            height: 40px;
-            /* margin-top: 4px; */
-            margin-bottom: 4px;
-            padding: 0px 2px;
-            overflow: hidden;
-            line-height: 40px;
-            text-overflow: ellipsis;
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+      .ant-btn.btncontact {
+            padding: 0 20px;
+            margin: 0 55px;
       }
-      .ant-row {
-            /* display: flex; */
-            flex-flow: row wrap;
+      .email h4 {
+            font-size: 20px;
+            font-weight: 700;
       }
-
-      .card-container {
-            justify-content: center;
-            flex-direction: row;
-            padding: 70px 30px;
+      .phone-number h4 {
+            font-size: 20px;
+            font-weight: 700;
       }
-
-      .Col-1 h5 {
-            font-size: 19px;
-            text-align: center !important;
-            margin-left: 100px !important;
-            margin-bottom: -10px !important;
+      .ant-menu .ant-menu-item a {
+            font-size: 20px;
+            font-weight: 600;
+      }
+      .logo {
+            width: 300px;
+            margin-left: 10px;
+            margin-top: 5px;
+      }
+      .container {
+            margin: 0 auto;
+            max-width: 1340px;
       }
       .Col-1 h1 {
-            font-size: 24px;
-            text-transform: uppercase;
-            font-weight: 900;
-            padding-left: 30px;
-            margin-top: 20px !important;
+            color: "#231f20" !important;
+            font-size: 32px;
+            margin: 5px;
       }
-      .email {
-            /* display: flex; */
+      .Col-1 h5 {
+            color: darkorange;
             font-family: MyriadPro;
-            font-size: 14px;
+            margin-top: -10px;
+            font-size: 15px;
+            margin-left: 60px;
+      }
+      .nav-items {
+            float: none;
+      }
+}
 
-            text-align: left;
-            margin-left: 200px;
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+      .ant-btn.btncontact {
+            padding: 0 20px;
+            margin: 0 55px;
       }
-      .Col-1-top {
-            flex-basis: 100%;
-            padding-right: 200px;
+      .email h4 {
+            font-size: 20px;
+            font-weight: 700;
       }
-      .h4.ant-typography,
-      .ant-typography h4 {
-            margin-bottom: 0.5em;
-            color: rgba(0, 0, 0, 0.85);
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 1.4;
-            /* margin-right: 20px; */
-            width: 180px;
+      .phone-number h4 {
+            font-size: 20px;
+            font-weight: 700;
+      }
+      .ant-menu .ant-menu-item a {
+            font-size: 24px;
+            font-weight: 700;
+      }
+      .logo {
+            width: 300px;
+            margin-left: 10px;
+            margin-top: 5px;
+      }
+      .container {
+            margin: 0 auto;
+            max-width: 1140px;
+      }
+      .Col-1 h1 {
+            color: "#231f20" !important;
+            font-size: 20px;
+            margin: 5px;
+            margin-left: 25px;
+            margin-top: 25px;
+      }
+      .Col-1 h5 {
+            color: darkorange;
+            font-family: MyriadPro;
+            margin-top: -12px;
+            font-size: 13px;
+            margin-left: 83px;
+      }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .ant-btn.btncontact {
+            padding: 0 20px;
+            margin: 0 55px;
+      }
+      .email h4 {
+            font-size: 22px;
+            font-weight: 700;
+      }
+      .phone-number h4 {
+            font-size: 22px;
+            font-weight: 700;
+      }
+      .ant-menu .ant-menu-item a {
+            font-size: 20px;
+            font-weight: 700;
+      }
+      .logo {
+            width: 350px;
+            margin-left: 20px;
+            margin-top: 5px;
+      }
+      .Col-1 h1 {
+            color: "#231f20" !important;
+            font-size: 20px;
+            margin: 5px;
+            margin-left: 25px;
+            margin-top: 25px;
+      }
+      .Col-1 h5 {
+            color: darkorange;
+            font-family: MyriadPro;
+            margin-top: -12px;
+            font-size: 13px;
+            margin-left: 106px;
+      }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+      .ant-btn.btncontact {
+            padding: 0 20px;
+            margin: 0 45px;
+      }
+      .email h4 {
+            font-size: 22px;
+      }
+      .phone-number h4 {
+            font-size: 22px;
+      }
+      .ant-menu .ant-menu-item a {
+            font-size: 25px;
+            font-weight: 700;
+      }
+      .logo {
+            width: 350px;
+            margin-left: 20px;
+            margin-top: 30px;
+      }
+      .Col-1 h1 {
+            color: "#231f20" !important;
+            font-size: 25px;
+            margin: 5px;
+            margin-left: 25px;
+            margin-top: 25px;
+      }
+      .Col-1 h5 {
+            color: darkorange;
+            font-family: MyriadPro;
+            margin-top: -12px;
+            font-size: 13px;
+            margin-left: 106px;
       }
       .banner-caption {
             position: absolute;
-            width: 220px;
-
-            /* overflow: hidden; */
-            padding: 20px;
+            width: 250px;
+            padding: 5px;
             box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.16);
             background-color: #fff;
             bottom: -25px;
+
             left: 20px;
       }
       .banner-caption h1 {
-            font-size: 16px;
+            font-family: MyriadPro;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: justify;
+            color: black;
       }
       .banner-caption p {
-            font-size: 14px;
+            font-family: MyriadPro;
+            font-size: 12px;
+            line-height: 1.4;
+            text-align: justify;
+            color: #231f20;
       }
-      /* .nav-container {
-          display: flex;
-          justify-content: center;
-    } */
-      .nav-items {
-            margin-top: -10px;
-            margin-right: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+      .navigation {
+            display: none;
+      }
+      .btn-mobile-menu {
+            display: block;
+            font-size: 30px;
+            position: relative;
+            margin-left: 30px;
+      }
+      .side-menu .nav-items {
+            margin: 0;
+            border: none;
+            flex-direction: column;
+            margin-left: 15px;
+            float: left;
+            font-size: 40px;
+      }
+      .contactinfos-container {
             display: flex;
-            list-style: none;
-            /* margin-top: 5px; */
+            justify-content: center;
+            float: none;
       }
-      .ant-menu .ant-menu-item a {
-            font-size: 8px;
-            /* display: flex; */
-      }
-      .whoweare-content h2 {
-            font-size: 20px;
-            text-align: center;
-            text-transform: uppercase;
-      }
-      .whoweare-content p {
-            padding: 15px;
-            font-size: 20px;
-            text-align: justify;
-      }
-      .whycare-content p {
-            padding: 15px;
-            font-size: 20px;
-            text-align: justify;
-      }
-      .whycare-content h1 {
-            font-size: 30px;
-            text-transform: uppercase;
-            /* text-align: center; */
-      }
-      .ourblog-container {
-            padding: 50px 5%;
-      }
-      .ourblog-container h1 {
-            font-size: 25px;
-            text-align: center;
-            text-transform: uppercase;
-      }
-      .ourblog-container p {
-            font-size: 20px;
-            text-align: justify;
-      }
-      .missions-container h1 {
-            font-size: 20px;
-            text-transform: uppercase;
-            margin-top: 15px;
-      }
-      .missions-container p {
-            font-size: 20px;
-            text-align: justify;
-      }
-      .strategy-container p {
-            font-size: 20px;
-            text-align: justify;
-      }
-      .strategy-container h1 {
-            font-size: 30px;
-            text-align: center;
-      }
-      .testimonials-container p {
-            font-size: 20px;
-            text-align: justify;
-      }
-      .testimonials-container h3 {
+      .email h4 {
             font-size: 18px;
       }
-      .testimonials-container h5 {
+      .phone-number h4 {
             font-size: 14px;
       }
-      .testimonials-container h1 {
-            font-size: 30px;
+
+      .Col-1 h1 {
+            color: "#231f20" !important;
+            font-size: 22px;
+            margin: 5px;
+      }
+      .Col-1 h5 {
+            color: darkorange;
+            font-family: MyriadPro;
+            margin-top: -10px;
+            font-size: 10px;
+            margin-left: 60px;
+      }
+      .banner-caption {
+            position: absolute;
+            width: 190px;
+            padding: 5px;
+            box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.16);
+            background-color: #fff;
+            bottom: -25px;
+
+            left: 20px;
+      }
+      .banner-caption h1 {
+            font-family: MyriadPro;
+            font-size: 15px;
             text-transform: uppercase;
+            text-align: justify;
       }
-      #chatwithus {
-            font-size: 20px !important;
+      .banner-caption p {
+            font-family: MyriadPro;
+            font-size: 12px;
+            text-align: justify;
       }
-}
-
-@media only screen and (max-width: 1320px) {
-      .ant-menu .ant-menu-item a {
-            font-size: 13px;
+      .whoweare h1 {
+            font-family: MyriadPro;
+            font-size: 80px;
+            text-align: right;
       }
-      .ant-menu-vertical .ant-menu-item,
-      .ant-menu-vertical-left .ant-menu-item,
-      .ant-menu-vertical-right .ant-menu-item,
-      .ant-menu-inline .ant-menu-item,
-      .ant-menu-vertical .ant-menu-submenu-title,
-      .ant-menu-vertical-left .ant-menu-submenu-title,
-      .ant-menu-vertical-right .ant-menu-submenu-title,
-      .ant-menu-inline .ant-menu-submenu-title {
-            height: 40px;
-            /* margin-top: 4px; */
-            margin-bottom: 4px;
-            padding: 0px 2px;
-            overflow: hidden;
-            line-height: 40px;
-            text-overflow: ellipsis;
+      .whoweare-content {
+            padding: 30px 5%;
       }
-      .ant-col {
-            max-width: 100%;
-            min-height: 1px;
+      .whoweare h2 {
+            font-size: 40px;
+            text-align: center;
       }
-}
-@media (min-width: 1200px) {
-      .ant-col-xl-12 {
-            display: block;
-            flex: 0 0 50%;
-            max-width: 50%;
+      .whoweare-content h2 {
+            font-size: 15px;
       }
-}
-@media (min-width: 768px) {
-      .ant-col-md-14 {
-            display: block;
+      .whoweare-content p {
+            font-size: 14px;
+      }
+      .testimonials-container p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 30px 5%;
+      }
+      .image-container .ant-image {
             width: 100%;
-            /* flex: 0 0 58.33333333%; */
-            /* max-width: 58.33333333%; */
+            height: auto;
+            overflow: hidden;
+      }
+      .whoweare-content p {
+            font-size: 14px;
+            text-align: justify;
+      }
+      .whoweare-content h2 {
+            font-size: 25px;
+      }
+
+      .whycare-content p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 30px 5%;
+      }
+      .whycare-content h2 {
+            font-size: 25px;
+            font-weight: 900;
+            text-align: center;
+      }
+      .ourblog-container p {
+            font-size: 14px;
+            text-align: justify;
+            padding: 30px 5%;
+      }
+      .ourblog-container h1 {
+            font-weight: 900;
+            font-size: 25px;
+            text-align: center;
+      }
+      .ourblog-container h2 {
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+      }
+      .missions-container {
+            padding: 30px 5%;
+      }
+      .missions-container h1 {
+            font-size: 25px;
+            font-weight: 800;
+            padding-top: 10px;
+            text-align: center;
+      }
+      .missions-container p {
+            font-size: 14px;
+      }
+      .card-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+      }
+      .logo {
+            width: 300px;
+            margin-left: 20px;
+            margin-top: 20px;
+      }
+      .contactus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+      }
+      .contactus h1 {
+            justify-content: space-between;
+            font-size: 14px;
+      }
+      .ant-btn.btncontact {
+            padding: 0 20px;
+            margin: 0 15px;
       }
 }
 
-/* @media only screen and (max-width: 580) {
-      .ant-menu .ant-menu-item a {
-            font-size: 8px;
-      }
-} */
-@media only screen and (min-width: 768px) and (max-width: 1070px) {
-      .nav-items {
-            display: flex;
-            list-style: none;
-            margin-top: 5px;
-            /* margin-right: -291px; */
-            justify-content: space-around;
-
-            /* /* padding: 100px; */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+      .text-block-bottom {
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            width: 100%;
+            text-align: center;
       }
 }

@@ -3,8 +3,7 @@ import { Card, Row, Col, Divider } from "antd";
 const { Meta } = Card;
 
 export const CardComponent = (props) => {
-      console.log("Image xheck in component : ", props.blog.img);
-
+      console.log("card data check:", props.blog.content);
       return (
             <Col xs={24} sm={24} md={6} lg={6} xl={8}>
                   <Card
@@ -21,9 +20,9 @@ export const CardComponent = (props) => {
                   >
                         <Meta
                               title={props.blog.title}
-                              content={props.content}
-                              user={props.user}
-                              date={props.date}
+                              description={props.blog.content}
+                              user={props.blog.user}
+                              date={props.blog.date}
                         />
                   </Card>
             </Col>

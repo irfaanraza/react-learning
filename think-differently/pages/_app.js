@@ -1,6 +1,6 @@
 import Layout from "./components/Layout";
 import "../styles/style.css";
-import "../styles/Responsive.css";
+import "../styles/responsive.css";
 
 function MyApp({ Component, pageProps }) {
       return (

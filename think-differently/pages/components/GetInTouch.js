@@ -1,147 +1,167 @@
-import { Row, Col, Form, Divider, Button, Input } from "antd";
-import { ContactDetails } from "./ContactDetails";
+import {
+      Row,
+      Col,
+      Form,
+      Divider,
+      Button,
+      Input,
+      Space,
+      Typography,
+      Image,
+} from "antd";
+import {
+      PhoneOutlined,
+      MailOutlined,
+      EnvironmentFilled,
+} from "@ant-design/icons";
+import logo from "../../public/assets/logo.png";
+
 export const GetInTouch = () => {
       const [form] = Form.useForm();
 
       return (
             <div className='contactus-container'>
-                  <h2>Get in Touch with Us</h2>
-                  <Form layout={"vertical"} form={form}>
-                        <Row gutter={5}>
-                              <Col xs={24} sm={24} md={8} lg={12} xl={12}>
-                                    <Row>
-                                          <Col
-                                                xs={24}
-                                                sm={24}
-                                                md={8}
-                                                lg={12}
-                                                xl={12}
-                                          >
-                                                <Form.Item label='Name'>
-                                                      <input type='text' />
-                                                </Form.Item>
-                                          </Col>
-                                          <Col
-                                                xs={24}
-                                                sm={24}
-                                                md={12}
-                                                lg={12}
-                                                xl={12}
-                                                // style={{
-                                                //       margin: -150,
-                                                //       marginTop: 0,
-                                                // }}
-                                          >
-                                                <Form.Item label='Email'>
-                                                      <input type='text' />
-                                                </Form.Item>
-                                          </Col>
+                  <div className='container'>
+                        <h2>Get in Touch with Us</h2>
+                        <Form layout={"vertical"} form={form}>
+                              <Row gutter={5}>
+                                    <Col xs={24} sm={24} md={8} lg={12} xl={12}>
+                                          <Row>
+                                                <Col
+                                                      xs={12}
+                                                      sm={12}
+                                                      md={12}
+                                                      lg={12}
+                                                      xl={12}
+                                                >
+                                                      <Form.Item label='Name'>
+                                                            <input type='text' />
+                                                      </Form.Item>
+                                                      <Form.Item label='Last Name'>
+                                                            <input type='text' />
+                                                      </Form.Item>
+                                                </Col>
+                                                <Col
+                                                      xs={12}
+                                                      sm={12}
+                                                      md={12}
+                                                      lg={12}
+                                                      xl={12}
+                                                >
+                                                      <Form.Item label='Email'>
+                                                            <input type='text' />
+                                                      </Form.Item>
+                                                      <Form.Item label='Phone'>
+                                                            <input type='text' />
+                                                      </Form.Item>
+                                                </Col>
 
-                                          <Col
-                                                xs={24}
-                                                sm={24}
-                                                md={12}
-                                                lg={12}
-                                                xl={12}
-                                          >
-                                                <Form.Item label='Last Name'>
-                                                      <input type='text' />
-                                                </Form.Item>
-                                          </Col>
-                                          <Col
-                                                xs={24}
-                                                sm={24}
-                                                md={12}
-                                                lg={12}
-                                                xl={12}
-                                                // style={{
-                                                //       margin: -150,
-                                                //       marginTop: 0,
-                                                // }}
-                                          >
-                                                <Form.Item label='Phone'>
-                                                      <input type='text' />
-                                                </Form.Item>
-                                          </Col>
-                                    </Row>
-                                    <Form.Item
-                                          label='Message'
-                                          // style={{ width: "80%" }}
-                                    >
-                                          <Input.TextArea />
-                                    </Form.Item>
-                                    <Button className='btncontact'>
-                                          Contact Us
-                                    </Button>
-                              </Col>
-                              <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Divider
-                                          type='vertical'
-                                          style={{
-                                                borderColor: "black",
-                                                height: 250,
-                                          }}
-                                    />
-                              </Col>
-                              <Col>
-                                    <div>
-                                          <ContactDetails />
-                                    </div>
-                              </Col>
-                        </Row>
-                  </Form>
+                                                <Col
+                                                      xs={18}
+                                                      sm={18}
+                                                      md={18}
+                                                      lg={18}
+                                                      xl={18}
+                                                >
+                                                      <Form.Item label='Message'>
+                                                            <Input.TextArea />
+                                                      </Form.Item>
+                                                </Col>
+                                          </Row>
+
+                                          <Button className='btncontact'>
+                                                Contact Us
+                                          </Button>
+                                    </Col>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                          <Divider
+                                                type='vertical'
+                                                style={{
+                                                      borderColor: "black",
+                                                      height: 250,
+                                                }}
+                                          />
+                                    </Col>
+                                    <Col xs={6} sm={6} md={6} lg={6} xl={6}>
+                                          <div className='contactdetails-header'>
+                                                <Image
+                                                      src={logo.src}
+                                                      preview={false}
+                                                      className='logo'
+                                                />
+                                          </div>
+
+                                          <h2>Contact Details</h2>
+                                          <div>
+                                                <div>
+                                                      <Space>
+                                                            <PhoneOutlined
+                                                                  style={{
+                                                                        color: "#e86d1f",
+                                                                  }}
+                                                            />
+                                                            <Typography.Title
+                                                                  level={5}
+                                                                  style={{
+                                                                        fontSize: 12,
+                                                                        color: "black",
+                                                                        fontWeight:
+                                                                              "700",
+                                                                  }}
+                                                            >
+                                                                  021431990
+                                                            </Typography.Title>
+                                                      </Space>
+                                                </div>
+                                                <div>
+                                                      <Space>
+                                                            <MailOutlined
+                                                                  style={{
+                                                                        color: "#e86d1f",
+                                                                  }}
+                                                            />
+                                                            <Typography.Title
+                                                                  level={5}
+                                                                  style={{
+                                                                        fontSize: 12,
+                                                                        color: "black",
+                                                                        fontWeight:
+                                                                              "700",
+                                                                  }}
+                                                            >
+                                                                  irfan.rza65@gmail.com
+                                                            </Typography.Title>
+                                                      </Space>
+                                                </div>
+                                                <div>
+                                                      <Space>
+                                                            <EnvironmentFilled
+                                                                  style={{
+                                                                        color: "#e86d1f",
+                                                                  }}
+                                                            />
+                                                            <Typography.Title
+                                                                  level={5}
+                                                                  style={{
+                                                                        fontSize: 12,
+                                                                        color: "black",
+                                                                        fontWeight:
+                                                                              "700",
+                                                                  }}
+                                                            >
+                                                                  Suit A, 1st
+                                                                  Floor,
+                                                                  Building
+                                                                  6,Rosedale
+                                                                  road Albany
+                                                            </Typography.Title>
+                                                      </Space>
+                                                </div>
+                                          </div>
+                                    </Col>
+                              </Row>
+                        </Form>
+                  </div>
             </div>
       );
 };
-// <div className='getintouch-container'>
-//       <h1>Get In Touch With Us</h1>
-
-//       <Row gutter={5}>
-//             <div className='form-container'>
-//                   <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-//                         <Form className='form'>
-//                               <Form.Item
-//                                     label='Name'
-//                                     name='dsdsdfsd'
-//                                     style={{
-//                                           marginLeft: 6,
-//                                           justifyContent: "center",
-//                                     }}
-//                               >
-//                                     <input
-//                                           type='text'
-//                                           placeholder='name'
-//                                           style={{
-//                                                 paddingRight: 5,
-//                                                 marginLeft: 5,
-//                                           }}
-//                                     />
-//                               </Form.Item>
-//                               <Form.Item
-//                                     label='LastName'
-//                                     style={{ marginRight: 6 }}
-//                               >
-//                                     <input type='text' />
-//                               </Form.Item>
-//                         </Form>
-//                   </Col>
-//                   <Col xs={2} sm={4} md={6} lg={8} xl={12}>
-//                         <Form className='form'>
-//                               <Form.Item label='Email'>
-//                                     <input />
-//                               </Form.Item>
-//                               <Form.Item label='Phone'>
-//                                     <input />
-//                               </Form.Item>
-//                         </Form>
-//                   </Col>
-//             </div>
-//       </Row>
-//       <Button className='btncontact'>Contact Us</Button>
-
-//       {/* <Divider
-//             type='vertical'
-//             orientation='left'
-//             style={{ borderColor: "black", borderWidth: 2 }}
-//       ></Divider> */}
-// </div>

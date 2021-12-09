@@ -3,15 +3,19 @@ import {
       PhoneOutlined,
       EnvironmentFilled,
 } from "@ant-design/icons";
-import { Row, Col, Space, Typography } from "antd";
+import { Row, Col, Space, Typography, Image } from "antd";
+import logo from "../../public/assets/logo.png";
 export const ContactDetails = () => {
       return (
             <Row>
                   <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                         <div style={{ float: "inline-end" }}>
                               <div className='contactdetails-header'>
-                                    <h1>Think Differently</h1>
-                                    <h5>Business.Strategy.People.Profit</h5>
+                                    <Image
+                                          src={logo.src}
+                                          preview={false}
+                                          className='logo'
+                                    />
                               </div>
 
                               <h2>Contact Details</h2>
