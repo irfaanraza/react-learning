@@ -17,13 +17,11 @@ import {
 import logo from "../../public/assets/logo.png";
 
 export const GetInTouch = () => {
-      const [form] = Form.useForm();
-
       return (
             <div className='contactus-container'>
                   <div className='container'>
                         <h2>Get in Touch with Us</h2>
-                        <Form layout={"vertical"} form={form}>
+                        <Form layout={"vertical"}>
                               <Row gutter={5}>
                                     <Col xs={24} sm={24} md={8} lg={12} xl={12}>
                                           <Row>
@@ -34,11 +32,39 @@ export const GetInTouch = () => {
                                                       lg={12}
                                                       xl={12}
                                                 >
-                                                      <Form.Item label='Name'>
-                                                            <input type='text' />
+                                                      <Form.Item
+                                                            label='Name'
+                                                            name='Name'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your name!",
+                                                                  },
+                                                                  {
+                                                                        whitespace: true,
+                                                                  },
+                                                                  { min: 3 },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
+                                                            <Input placeholder='Name' />
                                                       </Form.Item>
-                                                      <Form.Item label='Last Name'>
-                                                            <input type='text' />
+                                                      <Form.Item
+                                                            label='Last Name'
+                                                            name='Last Name'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your last name!",
+                                                                  },
+                                                                  {
+                                                                        whitespace: true,
+                                                                  },
+                                                                  { min: 3 },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
+                                                            <Input placeholder='Last Name' />
                                                       </Form.Item>
                                                 </Col>
                                                 <Col
@@ -48,11 +74,40 @@ export const GetInTouch = () => {
                                                       lg={12}
                                                       xl={12}
                                                 >
-                                                      <Form.Item label='Email'>
-                                                            <input type='text' />
+                                                      <Form.Item
+                                                            label='Email'
+                                                            name='Email'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your email!",
+                                                                  },
+                                                                  {
+                                                                        type: "email",
+                                                                        message: "Please enter a valid email address",
+                                                                  },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
+                                                            <Input placeholder='Email' />
                                                       </Form.Item>
-                                                      <Form.Item label='Phone'>
-                                                            <input type='text' />
+                                                      <Form.Item
+                                                            label='Phone'
+                                                            name='Phone Number'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your Phone Number!",
+                                                                  },
+                                                                  {
+                                                                        type: "number",
+                                                                        message: "Please enter a valid number",
+                                                                  },
+                                                                  { min: 5 },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
+                                                            <Input placeholder='Phone Number' />
                                                       </Form.Item>
                                                 </Col>
 
@@ -63,13 +118,32 @@ export const GetInTouch = () => {
                                                       lg={18}
                                                       xl={18}
                                                 >
-                                                      <Form.Item label='Message'>
+                                                      <Form.Item
+                                                            label='Message'
+                                                            name='Message'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your message here!",
+                                                                  },
+                                                                  {
+                                                                        type: "string",
+                                                                        message: "Please enter a message ",
+                                                                  },
+                                                                  { min: 3 },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
                                                             <Input.TextArea />
                                                       </Form.Item>
                                                 </Col>
                                           </Row>
 
-                                          <Button className='btncontact'>
+                                          <Button
+                                                className='btncontact'
+                                                type='primary'
+                                                htmlType='submit'
+                                          >
                                                 Contact Us
                                           </Button>
                                     </Col>

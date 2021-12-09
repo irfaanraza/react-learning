@@ -41,8 +41,32 @@ export const Footer = () => {
                                                       lg={12}
                                                       xl={12}
                                                 >
-                                                      <Form.Item name='Strategies'>
-                                                            <Select placeholder='I want '>
+                                                      <Form.Item
+                                                            name='Strategies'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please select atleast one option!",
+                                                                  },
+                                                                  {
+                                                                        type: "string",
+                                                                  },
+                                                            ]}
+                                                            hasFeedback
+                                                      >
+                                                            <Select
+                                                                  placeholder='I want '
+                                                                  rules={[
+                                                                        {
+                                                                              required: true,
+                                                                              message: "Please select atleast one option!",
+                                                                        },
+                                                                        {
+                                                                              type: "string",
+                                                                        },
+                                                                  ]}
+                                                                  hasFeedback
+                                                            >
                                                                   <Option value='Call me to discuss my que'>
                                                                         Strategies
                                                                   </Option>
@@ -95,6 +119,18 @@ export const Footer = () => {
                                                                         Email
                                                                   </label>
                                                             }
+                                                            name='Email'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your email!",
+                                                                  },
+                                                                  {
+                                                                        type: "email",
+                                                                        message: "Please enter a valid email address",
+                                                                  },
+                                                            ]}
+                                                            hasFeedback
                                                       >
                                                             <input
                                                                   type='text'
@@ -125,6 +161,19 @@ export const Footer = () => {
                                                                         Number
                                                                   </label>
                                                             }
+                                                            name='Phone Number'
+                                                            rules={[
+                                                                  {
+                                                                        required: true,
+                                                                        message: "Please input your Phone Number!",
+                                                                  },
+                                                                  {
+                                                                        type: "number",
+                                                                        message: "Please enter a valid number",
+                                                                  },
+                                                                  { min: 5 },
+                                                            ]}
+                                                            hasFeedback
                                                       >
                                                             <input
                                                                   type='text'
@@ -145,6 +194,8 @@ export const Footer = () => {
                                                             paddingBottom: 10,
                                                             minHeight: 20,
                                                       }}
+                                                      htmlType='submit'
+                                                      type='primary'
                                                 >
                                                       Send Message
                                                 </Button>
