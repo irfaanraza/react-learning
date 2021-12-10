@@ -1,0 +1,524 @@
+@import "~antd/dist/antd.css";
+* {
+      margin: 0px;
+      padding: 0px;
+}
+body {
+      background-color: #fff;
+      overflow-x: hidden;
+}
+.container {
+      margin: 0 auto;
+      max-width: 1340px;
+}
+.contactinfos-container {
+      display: flex;
+      justify-content: space-around;
+      float: right;
+
+      margin-top: 10px;
+}
+
+.email h4 {
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 1.59;
+      color: #231f20;
+}
+.phone-number h4 {
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 1.59;
+      color: #231f20;
+      margin-left: 15px;
+}
+
+.nav-items {
+      display: flex;
+      list-style: none;
+      margin-top: 5px;
+      justify-content: end;
+}
+.navigation .ant-menu-vertical {
+      border-right: none;
+}
+.navigation .ant-menu-vertical .ant-menu-item {
+      padding: 0 0 0 50px;
+}
+
+.nav-items.ant-menu-inline.ant-menu-root
+      .ant-menu-item
+      > .ant-menu-title-content {
+      overflow: auto;
+      text-overflow: auto;
+}
+
+.nav-items.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: "#fff";
+}
+
+.nav-items a {
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.24;
+      letter-spacing: normal;
+      text-align: left;
+      color: black;
+      list-style: none;
+      text-decoration: none;
+}
+.nav-items a:hover {
+      color: #e86d1f;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      margin: none;
+      padding: 0;
+}
+
+.banner {
+      position: relative;
+}
+.banner .ant-image {
+      width: 100%;
+}
+.banner-img.ant-image-img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+}
+.banner.ant-image-img {
+      width: 100%;
+      display: block;
+      margin-top: 31px;
+      position: relative;
+}
+.banner-caption {
+      position: absolute;
+      width: 320px;
+      padding: 20px;
+      box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.16);
+      background-color: #fff;
+      bottom: -25px;
+      left: 70px;
+}
+.banner-caption h1 {
+      margin: 37px 143px 14px 0;
+      font-family: MyriadPro;
+      font-size: 35px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: left;
+      color: black;
+}
+.banner-caption p {
+      font-family: MyriadPro;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #231f20;
+}
+.btn-contact.ant-btn {
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 28px;
+      border: solid 2px #231f20;
+
+      margin-top: 15px;
+      margin-bottom: 10px;
+}
+
+.whoweare {
+      display: block;
+      justify-content: center;
+      padding-top: 60px;
+}
+.whoweare h1 {
+      font-family: MyriadPro;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 1.24;
+      letter-spacing: normal;
+      text-align: center;
+      color: #231f20;
+}
+.whoweare h2 {
+      font-size: 40px;
+      text-align: center;
+}
+.number h1 {
+      text-align: end;
+      font-stretch: expanded;
+
+      font-size: 100px;
+}
+.whoweare-text h3 {
+      font-family: MyriadPro;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.33;
+      text-align: left;
+      color: #e86d1f;
+}
+.whoweare-content {
+      padding: 30px 5%;
+}
+
+.sidebanner .ant-image {
+      width: 100%;
+}
+
+.ant-menu .ant-menu-item a {
+      font-size: 25px;
+      font-weight: 700;
+}
+.nav-container
+      .ant-menu
+      .ant-menu-root
+      .ant-menu-vertical
+      .ant-menu-light
+      .nav-items {
+      background-color: blue;
+}
+
+.ant-menu .ant-menu-item {
+      background-color: transparent !important;
+}
+.card-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding: 70px 30px;
+}
+.ant-row-center {
+      justify-content: center;
+      align-items: center;
+}
+.sidebanner .ant-image {
+      padding-right: 200px;
+}
+.image-container {
+      justify-content: right;
+      align-items: center;
+      width: 100%;
+      height: auto;
+}
+.image-container .ant-image {
+      width: 100%;
+
+      overflow: hidden;
+}
+.whoweare-content p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.whoweare-content h2 {
+      font-size: 25px;
+      font-weight: 900;
+}
+.whycare-container {
+      background-color: rgb(248, 242, 242);
+}
+.whycare-content p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.whycare-content h1 {
+      font-size: 25px;
+      font-weight: 900;
+}
+.ourblog-container {
+      padding: 75px 5%;
+      background-color: rgb(248, 242, 242);
+      text-align: justify;
+}
+.ourblog-container p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.ourblog-container h1 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 900;
+}
+.missions-container {
+      padding: 75px 5%;
+}
+.missions-container h1 {
+      margin-top: 25px;
+      font-weight: 900;
+}
+
+.testimonials-container {
+      display: flex;
+      padding: 75px 5%;
+      background-color: rgb(248, 242, 242);
+}
+.testimonials-container p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.testimonials-container h1 {
+      font-size: 30px;
+      font-weight: 900;
+}
+.ourtestimonialstext-container {
+      display: flex;
+      flex-direction: row;
+}
+.ourtestimonials-image-container {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.contactus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+}
+
+.ant-btn.btncontact {
+      background-color: black;
+      border-radius: 15px;
+      color: white;
+      margin-bottom: 12px;
+      padding: 0 20px;
+      margin: 0 15px;
+}
+.ant-btn.btncontact span {
+      background-color: black;
+}
+
+.contactus-container {
+      margin-top: 70px;
+      padding: 0 40px;
+}
+.contactdetails-container {
+      display: flex;
+      margin-top: 30px;
+      padding-right: 10px;
+      justify-content: space-between;
+}
+.contactdetails-header {
+      display: block;
+}
+contactdetails-header h2 {
+      text-align: left;
+      font-size: 16px;
+}
+.contactdetails-header h5 {
+      padding: 0 70px;
+      color: coral;
+}
+.contactdetails {
+      display: inline;
+      padding-left: 30px;
+}
+.contactdetails-header .phone-icon {
+      width: 31.2px;
+      height: 14.6px;
+      margin: 0 1px 8.4px 1px;
+      background-color: #e86d1f;
+}
+.footer {
+      width: 100%;
+      padding: 40px 50px 50px 70px;
+      background-color: black;
+}
+.ant-layout {
+      background-color: #fff;
+}
+.footer-links {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      justify-content: space-between;
+}
+
+.footer-links a {
+      display: flex;
+      flex-direction: row !important;
+      font-family: MyriadPro;
+      font-size: 13px;
+
+      color: rgb(241, 238, 238);
+      list-style: none;
+      text-decoration: none;
+}
+.links {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0 5px 20px 5px;
+      border-bottom: 2px solid #e86d1f;
+}
+.links a {
+      color: #fff;
+}
+.input-container {
+      display: flex;
+      justify-content: space-between;
+}
+.email-input {
+      margin-right: 15px;
+      min-height: 20px !important;
+}
+.phone-input {
+      min-height: 20px !important;
+}
+
+.row-container {
+      width: 100%;
+}
+.social-icon-container .social-icons span:hover {
+      color: #e86d1f !important;
+}
+.social-icon-container .social-icons {
+      display: block;
+}
+.chat-form {
+      background: #282325;
+      box-shadow: 0px -2px 6px #363636;
+      padding: 40px 50px;
+      border-top: 6px solid #e86d1f;
+}
+h5.ant-typography,
+.ant-typography h5 {
+      margin-bottom: 0.5em;
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      color: black;
+}
+.row-container h2 {
+      color: white !important;
+}
+.whycare-container {
+      background-color: rgb(248, 242, 242);
+}
+.whycare-content h2 {
+      font-size: 30px;
+      font-weight: 900;
+}
+.ant-menu-inline.ant-menu-root .ant-menu-item > .ant-menu-title-content,
+.ant-menu-inline.ant-menu-root
+      .ant-menu-submenu-title
+      > .ant-menu-title-content {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+.strategy-container p {
+      font-size: 20px;
+      text-align: justify;
+      padding: 5px;
+}
+.whoweare-text {
+      padding-bottom: 30px;
+}
+
+.btn-mobile-menu {
+      display: none;
+}
+.card-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding: 70px 30px;
+}
+.ant-card-meta-title {
+      overflow: hidden;
+      color: rgba(0, 0, 0, 0.85);
+      font-weight: 500;
+      font-size: 11px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+}
+.logo {
+      margin-top: 10px;
+}
+.icon-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+.ourtestimonials-image-container .ant-image {
+      width: 100%;
+      margin-top: -110px;
+}
+.image-container .ant-image {
+      margin-top: -55px;
+      height: 700px;
+      width: 100%;
+      position: relative;
+}
+
+.icon-container.ant-image {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      width: 300px;
+}
+.fifteen-container .ant-image {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+}
+.fifteen {
+      display: flex;
+      justify-content: center;
+}
+
+.logo-transparent .ant-image-img {
+      position: absolute;
+      bottom: 0;
+      height: 150px;
+      width: 100%;
+      background-color: black;
+      background-size: contain;
+}
+.xyz {
+      position: relative;
+}
+.text-block-bottom {
+      position: absolute;
+      bottom: 0;
+      background-color: black;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+}
+.whoweare-container {
+      padding: 0 0 75px 5%;
+}
+.ant-menu .ant-menu-item a {
+      font-size: 20px;
+      font-weight: 600;
+}
