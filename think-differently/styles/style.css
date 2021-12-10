@@ -20,13 +20,13 @@ body {
 }
 
 .email h4 {
-      font-family: MyriadPro;
+      font-family: sans-serif;
       font-size: 14px;
       line-height: 1.59;
       color: #231f20;
 }
 .phone-number h4 {
-      font-family: MyriadPro;
+      font-family: sans-serif;
       font-size: 14px;
       line-height: 1.59;
       color: #231f20;
@@ -37,9 +37,13 @@ body {
       display: flex;
       list-style: none;
       margin-top: 5px;
-
-      justify-content: space-between;
-      float: right;
+      justify-content: end;
+}
+.navigation .ant-menu-vertical {
+      border-right: none;
+}
+.navigation .ant-menu-vertical .ant-menu-item {
+      padding: 0 0 0 50px;
 }
 
 .nav-items.ant-menu-inline.ant-menu-root
@@ -54,7 +58,7 @@ body {
 }
 
 .nav-items a {
-      font-family: MyriadPro;
+      font-family: sans-serif;
       font-size: 20px;
       font-weight: bold;
       font-stretch: normal;
@@ -174,8 +178,8 @@ body {
 }
 
 .ant-menu .ant-menu-item a {
-      font-size: 20px;
-      font-weight: 900;
+      font-size: 25px;
+      font-weight: 700;
 }
 .nav-container
       .ant-menu
@@ -513,4 +517,8 @@ h6 {
 }
 .whoweare-container {
       padding: 0 0 75px 5%;
+}
+.ant-menu .ant-menu-item a {
+      font-size: 20px;
+      font-weight: 600;
 }
