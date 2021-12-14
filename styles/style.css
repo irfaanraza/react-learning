@@ -21,13 +21,15 @@ body {
 
 .email h4 {
       font-family: sans-serif;
-      font-size: 14px;
+      font-size: 15px;
+      font-weight: 700;
       line-height: 1.59;
       color: #231f20;
 }
 .phone-number h4 {
       font-family: sans-serif;
-      font-size: 14px;
+      font-size: 15px;
+      font-weight: 700;
       line-height: 1.59;
       color: #231f20;
       margin-left: 15px;
@@ -521,4 +523,7 @@ h6 {
 .ant-menu .ant-menu-item a {
       font-size: 20px;
       font-weight: 600;
+}
+.navigation .ant-menu-vertical .ant-menu-item {
+      padding: 0 0 0 50px;
 }

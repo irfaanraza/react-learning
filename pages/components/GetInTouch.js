@@ -24,7 +24,7 @@ export const GetInTouch = () => {
                         <Form layout={"vertical"}>
                               <Row gutter={5}>
                                     <Col xs={24} sm={24} md={8} lg={12} xl={12}>
-                                          <Row>
+                                          <Row gutter={10}>
                                                 <Col
                                                       xs={12}
                                                       sm={12}

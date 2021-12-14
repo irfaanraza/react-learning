@@ -12,9 +12,9 @@ export const BusinessHistory = ({ title, caption, captiontitle }) => {
                                                 borderColor: "black",
                                           }}
                                     ></Divider>
-                                    <h2>1990's</h2>
+                                    <h2>1990 's</h2>
                                     <p>
-                                          What ever you may think, New Zealand's
+                                          What ever you may think, New Zealands
                                           future is, you can be sure. Lorem
                                           ipsum dolor sit amet consectetur
                                           adipisicing elit. Maxime mollitia,
