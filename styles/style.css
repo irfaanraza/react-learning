@@ -25,13 +25,15 @@ body {
       font-weight: 700;
       line-height: 1.59;
       color: #231f20;
+      opacity: 0.9;
 }
 .phone-number h4 {
       font-family: sans-serif;
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 600;
       line-height: 1.59;
       color: #231f20;
+      opacity: 0.9;
       margin-left: 15px;
 }
 
@@ -62,7 +64,7 @@ body {
 .nav-items a {
       font-family: sans-serif;
       font-size: 20px;
-      font-weight: bold;
+      font-weight: 700;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.24;

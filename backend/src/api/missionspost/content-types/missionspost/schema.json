@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "missionsposts",
+  "info": {
+    "singularName": "missionspost",
+    "pluralName": "missionsposts",
+    "displayName": "missionspost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::businesspost.businesspost",
+      "inversedBy": "missionsposts"
+    }
+  }
+}

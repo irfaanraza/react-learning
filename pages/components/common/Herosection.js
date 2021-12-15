@@ -1,5 +1,5 @@
 import { Button, Image } from "antd";
-import banner from "../../../public/assets/banner.jpg";
+import banner from "../../../public/assets/banner.png";
 export const Herosection = ({ title, caption }) => {
       return (
             <div className='banner'>

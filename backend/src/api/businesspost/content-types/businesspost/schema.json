@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businessposts",
+  "info": {
+    "singularName": "businesspost",
+    "pluralName": "businessposts",
+    "displayName": "businesspost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "captiontitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::businesspost.businesspost",
+      "inversedBy": "businessposts"
+    },
+    "businessposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::businesspost.businesspost",
+      "mappedBy": "user"
+    },
+    "heroposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "user"
+    },
+    "ourtestimonialposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ourtestimonialpost.ourtestimonialpost",
+      "mappedBy": "user"
+    },
+    "whoweareposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whowearepost.whowearepost",
+      "mappedBy": "user"
+    },
+    "whycareposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::whycarepost.whycarepost",
+      "mappedBy": "user"
+    },
+    "missionsposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::missionspost.missionspost",
+      "mappedBy": "user"
+    },
+    "blogposts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blogpost.blogpost",
+      "mappedBy": "user"
+    }
+  }
+}

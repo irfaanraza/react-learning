@@ -3,7 +3,6 @@ import { Card, Row, Col, Divider } from "antd";
 const { Meta } = Card;
 
 export const CardComponent = (props) => {
-      console.log("card data check:", props.blog.content);
       return (
             <Col xs={24} sm={24} md={6} lg={6} xl={8}>
                   <Card

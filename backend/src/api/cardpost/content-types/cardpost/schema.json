@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cardposts",
+  "info": {
+    "singularName": "cardpost",
+    "pluralName": "cardposts",
+    "displayName": "cardpost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blogpost.blogpost",
+      "inversedBy": "cardposts"
+    }
+  }
+}

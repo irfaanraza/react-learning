@@ -1,7 +1,9 @@
 import { Row, Col, Divider, Image, Button } from "antd";
 import testimonial from "../../public/assets/testimonial.jpg";
+import StrapiClient from "../../lib/StrapiClient";
+import imglogo from "../../public/assets/imglogo.svg";
 
-export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
+export const OurTestimonials = ({ title, caption, captiontitle, content }) => {
       return (
             <div className='testimonials-container'>
                   <div className='container'>
@@ -80,6 +82,9 @@ export const OurTestimonials = ({ title, caption, content, captiontitle }) => {
                                                 preview={false}
                                                 className='testimonial-image'
                                           />
+                                          <div className='text-block-bottom'>
+                                                <img src={imglogo.src} />
+                                          </div>
                                     </div>
                               </Col>
 
