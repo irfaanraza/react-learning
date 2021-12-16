@@ -1,6 +1,6 @@
-import { Herosection } from "../components/common/Herosection";
-import { OurTestimonials } from "../components/OurTestimonials";
-import { WhoWeAre } from "../components/WhoWeAre";
+import Herosection from "/components/common/Herosection";
+import OurTestimonials from "/components/OurTestimonials";
+import WhoWeAre from "/components//WhoWeAre";
 
 const ProcessPage = () => {
       return (

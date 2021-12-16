@@ -1,7 +1,7 @@
-import { CardComponent } from "../components/CardComponent";
-import { CardList } from "../components/CardList";
-import { Herosection } from "../components/common/Herosection";
-import { OurTestimonials } from "../components/OurTestimonials";
+import CardComponent from "/components/CardComponent";
+import CardList from "/components/CardList";
+import Herosection from "/components/common/Herosection";
+import OurTestimonials from "/components/OurTestimonials";
 
 const BlogPage = () => {
       return (

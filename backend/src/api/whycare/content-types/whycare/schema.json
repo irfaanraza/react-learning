@@ -1,10 +1,11 @@
 {
-  "kind": "collectionType",
-  "collectionName": "cardposts",
+  "kind": "singleType",
+  "collectionName": "whycares",
   "info": {
-    "singularName": "cardpost",
-    "pluralName": "cardposts",
-    "displayName": "cardpost"
+    "singularName": "whycare",
+    "pluralName": "whycares",
+    "displayName": "home-whycare",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,17 +15,18 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "content": {
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "whoweares",
+  "info": {
+    "singularName": "whoweare",
+    "pluralName": "whoweares",
+    "displayName": "home-whowe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

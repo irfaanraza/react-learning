@@ -1,5 +1,5 @@
-import { Herosection } from "../components/common/Herosection";
-import { OurTestimonials } from "../components/OurTestimonials";
+import Herosection from "/components/common/Herosection";
+import OurTestimonials from "/components/OurTestimonials";
 
 const TestimonialsPage = () => {
       return (

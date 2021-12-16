@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "missionsposts",
+  "collectionName": "ourtestimonials",
   "info": {
-    "singularName": "missionspost",
-    "pluralName": "missionsposts",
-    "displayName": "home-mission",
+    "singularName": "ourtestimonial",
+    "pluralName": "ourtestimonials",
+    "displayName": "home-testimonial",
     "description": ""
   },
   "options": {
@@ -15,8 +15,11 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
     },
     "image": {
       "type": "media",

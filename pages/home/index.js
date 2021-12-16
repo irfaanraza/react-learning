@@ -1,14 +1,11 @@
-import { AppHeader } from "../components/common/AppHeader";
-import { Herosection } from "../components/common/Herosection";
-import { OurTestimonials } from "../components/OurTestimonials";
-import { Missions } from "../components/Missions";
-import { WhoWeAre } from "./../components/WhoWeAre";
-import { WhyYouShouldCare } from "./../components/WhyYouShouldCare";
-import { OurBlogs } from "../components/OurBlogs";
-import StrapiClient from "../../lib/StrapiClient";
+import Herosection from "/components/common/Herosection";
+import OurTestimonials from "/components/OurTestimonials";
+import Missions from "/components/Missions";
+import WhoWeAre from "/components/WhoWeAre";
+import WhyYouShouldCare from "/components/WhyYouShouldCare";
+import OurBlogs from "/components/OurBlogs";
 
-const HomePage = () => {
-      // console.log("checking data from strapi:", props.tdata);
+export default function HomePage() {
       return (
             <>
                   <Herosection
@@ -39,16 +36,4 @@ const HomePage = () => {
                   />
             </>
       );
-};
-
-// const Client = StrapiClient();
-
-// export const getStaticProps = async () => {
-//       const data = await Client.fetchData("/whoweareposts");
-//       return {
-//             props: {
-//                   tdata: data,
-//             },
-//       };
-// };
-export default HomePage;
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "herosections",
+  "info": {
+    "singularName": "herosection",
+    "pluralName": "herosections",
+    "displayName": "home-hero",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "herotitle": {
+      "type": "string"
+    },
+    "herosubtitle": {
+      "type": "string"
+    }
+  }
+}

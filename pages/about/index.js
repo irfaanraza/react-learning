@@ -1,11 +1,13 @@
-import { BusinessHistory } from "../components/BusinessHistory";
-import { Herosection } from "../components/common/Herosection";
-import { Missions } from "../components/Missions";
-import { OurTestimonials } from "../components/OurTestimonials";
-import { WhoWeAre } from "../components/WhoWeAre";
-import { WhyYouShouldCare } from "../components/WhyYouShouldCare";
+import BusinessHistory from "/components/BusinessHistory";
+import Herosection from "/components/common/Herosection";
+import Missions from "/components/Missions";
+import OurTestimonials from "/components/OurTestimonials";
+import WhoWeAre from "/components/WhoWeAre";
+import WhyYouShouldCare from "/components/WhyYouShouldCare";
 
-const AboutPage = () => {
+const AboutPage = ({ HomePageposts }) => {
+      let data = HomePageposts;
+      console.log("checking data:", data);
       return (
             <>
                   <Herosection
@@ -39,4 +41,14 @@ const AboutPage = () => {
             </>
       );
 };
+export async function getStaticProps() {
+      const res = await fetch(`${process.env.STRAPI_API_URL}/api/homepages`);
+      const HomePageposts = await res.json();
+      console.log("checking api data:", HomePageposts);
+      return {
+            props: {
+                  HomePageposts,
+            },
+      };
+}
 export default AboutPage;
