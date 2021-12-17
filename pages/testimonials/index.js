@@ -1,26 +1,39 @@
 import Herosection from "/components/common/Herosection";
 import OurTestimonials from "/components/OurTestimonials";
 
-const TestimonialsPage = () => {
+const TestimonialsPage = ({ TestimonialPagePost }) => {
+      let data = TestimonialPagePost;
+      // console.log("checking api data from testimonials:", data);
+
+      const posts = Object.values(data);
+      posts[0].attributes.title;
+      // console.log("data from api:", posts);
+      // console.log("data from api post[0]:", posts[0].attributes.title);
+
       return (
             <>
                   <Herosection
                         title='Testimonials'
                         caption='How Do We Get Started ?'
                   />
+
                   <OurTestimonials
-                        title='Our Testimonials'
-                        caption='Mike Wardlaw'
+                        title={posts[0].attributes.title}
+                        caption={data.title}
                         captiontitle='Managing Director, Babcock, (NZ) Ltd'
-                        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error,'
+                        content={posts[0].attributes.content}
                   />
             </>
       );
 };
+export async function getStaticProps() {
+      const res = await fetch(`${process.env.STRAPI_API_URL}/api/testimonial`);
+      const TestimonialPagePost = await res.json();
+      console.log("checking api data:", TestimonialPagePost);
+      return {
+            props: {
+                  TestimonialPagePost,
+            },
+      };
+}
 export default TestimonialsPage;

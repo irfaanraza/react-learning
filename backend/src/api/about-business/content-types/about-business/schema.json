@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_businesses",
+  "info": {
+    "singularName": "about-business",
+    "pluralName": "about-businesses",
+    "displayName": "about-business"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

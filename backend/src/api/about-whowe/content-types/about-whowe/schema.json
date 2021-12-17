@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_whowes",
+  "info": {
+    "singularName": "about-whowe",
+    "pluralName": "about-whowes",
+    "displayName": "about-whowe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
