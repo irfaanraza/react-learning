@@ -519,6 +519,9 @@ h6 {
       text-align: center;
       padding: 20px 0;
 }
+.text-block-bottom-img {
+      object-fit: contain;
+}
 /* .text-block-bottom-testimonial {
       position: absolute;
       bottom: 0;

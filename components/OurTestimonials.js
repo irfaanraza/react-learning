@@ -75,14 +75,17 @@ const OurTestimonials = ({ title, caption, captiontitle, content }) => {
                               </Col>
 
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                                    <div className='ourtestimonials-image-container'>
+                                    <div className='ourtestimonials-image-container xyz'>
                                           <Image
                                                 src={testimonial.src}
                                                 preview={false}
                                                 className='testimonial-image'
                                           />
                                           <div className='text-block-bottom'>
-                                                <img src={imglogo.src} />
+                                                <img
+                                                      src={imglogo.src}
+                                                      className='text-block-bottom-img'
+                                                />
                                           </div>
                                     </div>
                               </Col>

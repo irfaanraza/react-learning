@@ -5,17 +5,24 @@ import OurTestimonials from "/components/OurTestimonials";
 import WhoWeAre from "/components/WhoWeAre";
 import WhyYouShouldCare from "/components/WhyYouShouldCare";
 
-const AboutPage = ({ HomePageposts }) => {
-      let data = HomePageposts;
-      console.log("checking data:", data);
+const AboutPage = ({ HeroSectionpost, AboutTestimonialPage }) => {
+      let data = HeroSectionpost;
+      const posts = Object.values(data);
+      posts[0].attributes.title;
+      let aboutt = AboutTestimonialPage;
+      const abouttposts = Object.values(aboutt);
+      abouttposts[0].attributes.title;
+
+      console.log("from about who we are:", abouttposts[0].attributes.title);
+
       return (
             <>
                   <Herosection
-                        title='About Us'
-                        caption='How Do We Get Started'
+                        title={posts[0].attributes.herotitle}
+                        caption={posts[0].attributes.herosubtitle}
                   />
                   <WhoWeAre
-                        title='Phil Pickford '
+                        title='about phil'
                         captiontitle='I Team Member'
                         captionpara='I am Always telling my clients "Its all about you" And it is'
                   />
@@ -27,27 +34,25 @@ const AboutPage = ({ HomePageposts }) => {
                   />
                   <Missions />
                   <OurTestimonials
-                        title='Our Testimonials'
-                        caption='Mike Wardlaw'
-                        captiontitle='Managing Director, Babcock (NZ) Ltd'
-                        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error,'
+                        title={abouttposts[0].attributes.title}
+                        caption={abouttposts[0].attributes.subtitle}
+                        captiontitle={abouttposts[0].attributes.description}
+                        content={abouttposts[0].attributes.content}
                   />
             </>
       );
 };
-export async function getStaticProps() {
-      const res = await fetch(`${process.env.STRAPI_API_URL}/api/homepages`);
-      const HomePageposts = await res.json();
-      console.log("checking api data:", HomePageposts);
+export async function getServerSideProps() {
+      const res = await fetch(`${process.env.STRAPI_API_URL}/api/herosection`);
+      const HeroSectionpost = await res.json();
+      const resp = await fetch(
+            `${process.env.STRAPI_API_URL}/api/about-testimonial`
+      );
+      const AboutTestimonialPage = await resp.json();
       return {
             props: {
-                  HomePageposts,
+                  HeroSectionpost,
+                  AboutTestimonialPage,
             },
       };
 }

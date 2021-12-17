@@ -4,6 +4,7 @@ import WhyYouShouldCare from "../components/WhyYouShouldCare";
 import OurBlogs from "../components/OurBlogs";
 import Missions from "../components/Missions";
 import OurTestimonials from "../components/OurTestimonials";
+import HomePage from "./home";
 export default function Home({ HomePageposts }) {
       return (
             <>
@@ -37,13 +38,13 @@ export default function Home({ HomePageposts }) {
             </>
       );
 }
-export async function getServerSideProps() {
-      const res = await fetch("http://localhost:1337/api/homepages");
-      const HomePageposts = await res.json();
-      console.log("data fetching:", HomePageposts);
-      return {
-            props: {
-                  HomePageposts,
-            },
-      };
-}
+// export async function getServerSideProps() {
+//       const res = await fetch("http://localhost:1337/api/homepages");
+//       const HomePageposts = await res.json();
+//       console.log("data fetching:", HomePageposts);
+//       return {
+//             props: {
+//                   HomePageposts,
+//             },
+//       };
+// }
