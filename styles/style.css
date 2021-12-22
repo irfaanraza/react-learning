@@ -176,6 +176,9 @@ body {
 .whoweare-content {
       padding: 30px 5%;
 }
+.whoweare-content p {
+      font-size: 8px;
+}
 
 .sidebanner .ant-image {
       width: 100%;
@@ -519,9 +522,9 @@ h6 {
       text-align: center;
       padding: 20px 0;
 }
-.text-block-bottom-img {
+/* .text-block-bottom-img {
       object-fit: contain;
-}
+} */
 /* .text-block-bottom-testimonial {
       position: absolute;
       bottom: 0;

@@ -3,7 +3,7 @@ import learning from "../public/assets/learning.svg";
 import leadership from "../public/assets/leadership.svg";
 import goals from "../public/assets/goals.svg";
 
-const Missions = () => {
+const Missions = ({ title1, title2, title3, content1, content2, content3 }) => {
       return (
             <div className='missions-container'>
                   <div className='container'>
@@ -17,16 +17,8 @@ const Missions = () => {
                                           />
                                     </div>
                                     <div className='strategy-container'>
-                                          <h1>Specialise in Strategy </h1>
-                                          <p>
-                                                It is a long established fact
-                                                that a reader will be distracted
-                                                by the readable content of a
-                                                page when looking at its layout.
-                                                The point of using Lorem Ipsum
-                                                is that it has a more-or-less
-                                                normal distribution of letters,
-                                          </p>
+                                          <h1>{title1} </h1>
+                                          <p>{content1}</p>
                                     </div>
                               </Col>
                               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
@@ -38,16 +30,8 @@ const Missions = () => {
                                           />
                                     </div>
                                     <div className='strategy-container'>
-                                          <h1>One Goal Setting Too</h1>
-                                          <p>
-                                                It is a long established fact
-                                                that a reader will be distracted
-                                                by the readable content of a
-                                                page when looking at its layout.
-                                                The point of using Lorem Ipsum
-                                                is that it has a more-or-less
-                                                normal distribution of letters,
-                                          </p>
+                                          <h1>{title2}</h1>
+                                          <p>{content2}</p>
                                     </div>
                               </Col>
                               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
@@ -59,16 +43,8 @@ const Missions = () => {
                                           />
                                     </div>
                                     <div className='strategy-container'>
-                                          <h1>Leadership Capabilities </h1>
-                                          <p>
-                                                It is a long established fact
-                                                that a reader will be distracted
-                                                by the readable content of a
-                                                page when looking at its layout.
-                                                The point of using Lorem Ipsum
-                                                is that it has a more-or-less
-                                                normal distribution of letters,
-                                          </p>
+                                          <h1>{title3} </h1>
+                                          <p>{content3}</p>
                                     </div>
                               </Col>
                         </Row>

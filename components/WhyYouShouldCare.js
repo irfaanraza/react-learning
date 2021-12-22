@@ -2,8 +2,9 @@ import { LogoutOutlined } from "@ant-design/icons";
 import { Row, Col, Image, Layout } from "antd";
 import sidebanner from "../public/assets/sidebanner.jpg";
 import imglogo from "../public/assets/imglogo.svg";
+import { Content } from "antd/lib/layout/layout";
 
-const WhyYouShouldCare = ({ title }) => {
+const WhyYouShouldCare = ({ title, content }) => {
       return (
             <div className='whycare-container'>
                   <div className='container'>
@@ -22,31 +23,7 @@ const WhyYouShouldCare = ({ title }) => {
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <div className='whycare-content'>
                                           <h2>{title}</h2>
-                                          <p>
-                                                Are you happy with your revenue?
-                                                Are you happy with your profits?
-                                                Are your people performing to
-                                                their potential, everyday? Are
-                                                you happy with your strategy?
-                                                Are you executing it,
-                                                relentlessly? Are you
-                                                comfortable as leader? Do you
-                                                sleep well? Are you happy with
-                                                your revenue? Are you happy with
-                                                your profits? Are your people
-                                                performing to their potential,
-                                                everyday? Are you happy with
-                                                your strategy? Are you executing
-                                                it, relentlessly? Are you
-                                                comfortable as leader? Do you
-                                                sleep well? Are you happy with
-                                                your revenue? Are you happy with
-                                                your profits? Are your people
-                                                <br></br>
-                                                If the answer to all of the
-                                                questions is yes, then don't
-                                                call me
-                                          </p>
+                                          <p>{content}</p>
                                     </div>
                               </Col>
                         </Row>

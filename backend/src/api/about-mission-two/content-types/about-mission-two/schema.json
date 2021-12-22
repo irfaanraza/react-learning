@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "about_missions",
+  "collectionName": "about_mission_twos",
   "info": {
-    "singularName": "about-mission",
-    "pluralName": "about-missions",
-    "displayName": "about-mission-one",
-    "description": ""
+    "singularName": "about-mission-two",
+    "pluralName": "about-mission-twos",
+    "displayName": "About-mission-two"
   },
   "options": {
     "draftAndPublish": true
@@ -19,14 +18,13 @@
       "type": "richtext"
     },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

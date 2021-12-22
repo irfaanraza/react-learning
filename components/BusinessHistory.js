@@ -1,5 +1,11 @@
 import { Row, Col, Divider } from "antd";
-const BusinessHistory = ({ title, caption, captiontitle }) => {
+const BusinessHistory = ({
+      title,
+      caption,
+      captiontitle,
+      contentp1,
+      contentp2,
+}) => {
       return (
             <div className='ourblog-container'>
                   <div className='container'>
@@ -13,25 +19,7 @@ const BusinessHistory = ({ title, caption, captiontitle }) => {
                                           }}
                                     ></Divider>
                                     <h2>1990 's</h2>
-                                    <p>
-                                          What ever you may think, New Zealands
-                                          future is, you can be sure. Lorem
-                                          ipsum dolor sit amet consectetur
-                                          adipisicing elit. Maxime mollitia,
-                                          molestiae quas vel sint commodi
-                                          repudiandae consequuntur voluptatum
-                                          laborum numquam blanditiis harum
-                                          quisquam eius sed odit fugiat iusto
-                                          fuga praesentium optio, eaque rerum!
-                                          Provident similique accusantium nemo
-                                          autem. Veritatis obcaecati tenetur
-                                          iure eius earum ut molestias
-                                          architecto voluptate aliquam nihil,
-                                          eveniet aliquid culpa officia aut!
-                                          Impedit sit sunt quaerat, odit,
-                                          tenetur error, harum nesciunt ipsum
-                                          debitis quas aliquid
-                                    </p>
+                                    <p>{contentp1}</p>
                               </Col>
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <h1></h1>
@@ -42,24 +30,7 @@ const BusinessHistory = ({ title, caption, captiontitle }) => {
                                           }}
                                     ></Divider>
                                     <h2>2004</h2>
-                                    <p>
-                                          A topic close to my heart Lorem ipsum
-                                          dolor sit amet consectetur adipisicing
-                                          elit. Maxime mollitia, molestiae quas
-                                          vel sint commodi repudiandae
-                                          consequuntur voluptatum laborum
-                                          numquam blanditiis harum quisquam eius
-                                          sed odit fugiat iusto fuga praesentium
-                                          optio, eaque rerum! Provident
-                                          similique accusantium nemo autem.
-                                          Veritatis obcaecati tenetur iure eius
-                                          earum ut molestias architecto
-                                          voluptate aliquam nihil, eveniet
-                                          aliquid culpa officia aut! Impedit sit
-                                          sunt quaerat, odit, tenetur error,
-                                          harum nesciunt ipsum debitis quas
-                                          aliquid
-                                    </p>
+                                    <p>{contentp2}</p>
                               </Col>
                         </Row>
                   </div>
