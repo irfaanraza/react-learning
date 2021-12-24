@@ -4,20 +4,21 @@
   "info": {
     "singularName": "about-business",
     "pluralName": "about-businesses",
-    "displayName": "about-business"
+    "displayName": "about-business",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titleOne": {
       "type": "string"
     },
-    "subtitle": {
+    "subtitleOne": {
       "type": "string"
     },
-    "content": {
+    "contentOne": {
       "type": "richtext"
     }
   }

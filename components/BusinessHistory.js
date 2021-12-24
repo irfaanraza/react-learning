@@ -1,10 +1,12 @@
 import { Row, Col, Divider } from "antd";
 const BusinessHistory = ({
-      title,
+      titleOne,
       caption,
       captiontitle,
-      contentp1,
-      contentp2,
+      ContentOne,
+      SubtitleOne,
+      description,
+      Content,
 }) => {
       return (
             <div className='ourblog-container'>
@@ -19,7 +21,7 @@ const BusinessHistory = ({
                                           }}
                                     ></Divider>
                                     <h2>1990 's</h2>
-                                    <p>{contentp1}</p>
+                                    <p>{ContentOne}</p>
                               </Col>
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <h1></h1>
@@ -29,8 +31,8 @@ const BusinessHistory = ({
                                                 borderColor: "black",
                                           }}
                                     ></Divider>
-                                    <h2>2004</h2>
-                                    <p>{contentp2}</p>
+                                    <h2>{description}</h2>
+                                    <p>{Content}</p>
                               </Col>
                         </Row>
                   </div>

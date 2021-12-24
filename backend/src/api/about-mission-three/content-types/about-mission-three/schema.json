@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-mission-three",
     "pluralName": "about-mission-threes",
-    "displayName": "About-mission-three"
+    "displayName": "About-mission-three",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,13 +19,14 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_heroes",
+  "info": {
+    "singularName": "contact-hero",
+    "pluralName": "contact-heroes",
+    "displayName": "contact-hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

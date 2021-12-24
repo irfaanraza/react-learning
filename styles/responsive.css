@@ -238,6 +238,7 @@
             margin-left: 60px;
       }
       .banner-caption {
+            visibility: hidden;
             position: absolute;
             width: 190px;
             padding: 5px;

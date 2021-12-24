@@ -2,13 +2,22 @@ import { Row, Col, Divider, Image, Button } from "antd";
 import testimonial from "../public/assets/testimonial.jpg";
 import imglogo from "../public/assets/imglogo.svg";
 
-const OurTestimonials = ({ title, caption, captiontitle, content }) => {
+const OurTestimonials = ({
+      title,
+      caption,
+      captiontitle,
+      content,
+      description,
+      subtitle,
+}) => {
       return (
             <div className='testimonials-container'>
                   <div className='container'>
                         <Row gutter={10}>
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <h1> {title}</h1>
+                                    <h2>{subtitle}</h2>
+                                    <h3>{description}</h3>
                                     <h3> {caption}</h3>
                                     <h5>{captiontitle}</h5>
 

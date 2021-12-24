@@ -444,6 +444,9 @@ h6 {
       text-align: justify;
       padding: 5px;
 }
+.strategy-container h1 {
+      text-align: center;
+}
 .whoweare-text {
       padding-bottom: 30px;
 }
@@ -460,10 +463,11 @@ h6 {
 .ant-card-meta-title {
       overflow: hidden;
       color: rgba(0, 0, 0, 0.85);
-      font-weight: 500;
-      font-size: 11px;
-      white-space: nowrap;
+      font-weight: 700;
+      font-size: 14px;
+      white-space: pre-wrap;
       text-overflow: ellipsis;
+      text-align: center;
 }
 .logo {
       margin-top: 10px;
@@ -542,4 +546,11 @@ h6 {
 }
 .navigation .ant-menu-vertical .ant-menu-item {
       padding: 0 0 0 50px;
+}
+.blog h2 {
+      text-align: center;
+      font-weight: 900;
+}
+.blog p {
+      text-align: justify;
 }

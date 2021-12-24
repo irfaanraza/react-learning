@@ -31,6 +31,7 @@ export const AppHeader = () => {
       const onClose = () => {
             setVisible(false);
       };
+
       return (
             <div className='container'>
                   <Row gutter={10}>
@@ -44,11 +45,17 @@ export const AppHeader = () => {
                                           xl={20}
                                     >
                                           <div className='Col-1'>
-                                                <Image
-                                                      src={logo.src}
-                                                      preview={false}
-                                                      className='logo'
-                                                />
+                                                <Link href='/home'>
+                                                      <a>
+                                                            <Image
+                                                                  src={logo.src}
+                                                                  preview={
+                                                                        false
+                                                                  }
+                                                                  className='logo'
+                                                            />
+                                                      </a>
+                                                </Link>
                                           </div>
                                     </Col>
                                     <Col xs={6} sm={6} md={6} lg={6} xl={6}>

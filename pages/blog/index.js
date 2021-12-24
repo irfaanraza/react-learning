@@ -3,26 +3,55 @@ import CardList from "/components/CardList";
 import Herosection from "/components/common/Herosection";
 import OurTestimonials from "/components/OurTestimonials";
 
-const BlogPage = () => {
+const BlogPage = ({ BlogPage, HeroText, Card1 }) => {
+      let data = BlogPage;
+      let hero = HeroText;
+      let c1 = Card1;
+      const CardOne = Object.values(c1);
+      CardOne[0].attributes.title;
+      const HeroPost = Object.values(hero);
+      const Testimonial = Object.values(data);
+
+      console.log("checking data from blog page: ", CardOne);
+
       return (
             <>
                   <Herosection
-                        title='Recent Blogs'
-                        caption='How Do We Get Started'
+                        title={HeroPost[0].attributes.title}
+                        caption={HeroPost[0].attributes.subtitle}
                   />
-                  <CardList />
+                  <CardList
+                        title={CardOne[0].attributes.title}
+                        description={CardOne[0].attributes.description}
+                  />
                   <OurTestimonials
-                        title='Our Testimonials'
-                        caption='Mike Wardlaw'
-                        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error,'
+                        title={Testimonial[0].attributes.title}
+                        subtitle={Testimonial[0].attributes.subtitle}
+                        description={Testimonial[0].attributes.description}
+                        content={Testimonial[0].attributes.content}
                   />
             </>
       );
 };
+export async function getStaticProps() {
+      const response = await fetch(
+            `${process.env.STRAPI_API_URL}/api/blogpage-testimonial`
+      );
+      const BlogPage = await response.json();
+
+      const blogresponse = await fetch(
+            `${process.env.STRAPI_API_URL}/api/blogpage-hero`
+      );
+      const HeroText = await blogresponse.json();
+
+      const res1 = await fetch(`${process.env.STRAPI_API_URL}/api/cardpost1`);
+      const Card1 = await res1.json();
+      return {
+            props: {
+                  BlogPage,
+                  HeroText,
+                  Card1,
+            },
+      };
+}
 export default BlogPage;

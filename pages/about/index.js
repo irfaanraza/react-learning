@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react/cjs/react.development";
 import BusinessHistory from "/components/BusinessHistory";
 import Herosection from "/components/common/Herosection";
 import Missions from "/components/Missions";
@@ -15,6 +14,7 @@ const AboutPage = ({
       Missionpost1,
       Missionpost2,
       Missionpost3,
+      Businesspost2,
 }) => {
       let data = HeroSectionpost;
       let aboutt = AboutTestimonialPage;
@@ -24,6 +24,9 @@ const AboutPage = ({
       let m1 = Missionpost1;
       let m2 = Missionpost2;
       let m3 = Missionpost3;
+      let businessPost2 = Businesspost2;
+      const BusinessPost = Object.values(businessPost2);
+
       const posts = Object.values(data);
       posts[0].attributes.title;
       const abouttposts = Object.values(aboutt);
@@ -41,8 +44,10 @@ const AboutPage = ({
       const postthree = Object.values(m3);
       postthree[0].attributes.title;
 
-      console.log(" about who we are:", whowepost[0].attributes.title);
-      console.log("about data from hero:", abouttposts[0].attributes.title);
+      console.log(
+            "Business history page data:",
+            business[0].attributes.contentOne
+      );
 
       return (
             <>
@@ -59,11 +64,11 @@ const AboutPage = ({
                         content={whypost[0].attributes.content}
                   />
                   <BusinessHistory
-                        title={business[0].attributes.title}
-                        captiontitle='1940'
-                        caption={business[0].attributes.description}
-                        contentp1={business[0].attributes.content}
-                        contentp2={whowepost[0].attributes.content}
+                        titleOne={business[0].attributes.titleOne}
+                        SubtitleOne={business[0].attributes.SubtitleOne}
+                        ContentOne={business[0].attributes.contentOne}
+                        description={BusinessPost[0].attributes.description}
+                        Content={BusinessPost[0].attributes.content}
                   />
                   <Missions
                         title1={postone[0].attributes.title}
@@ -102,6 +107,12 @@ export async function getStaticProps() {
             `${process.env.STRAPI_API_URL}/api/about-business`
       );
       const Businesspost = await responsebusiness.json();
+
+      const resbusiness = await fetch(
+            `${process.env.STRAPI_API_URL}/api/about-businesspost`
+      );
+      const Businesspost2 = await resbusiness.json();
+
       const responsemone = await fetch(
             `${process.env.STRAPI_API_URL}/api/about-mission`
       );
@@ -124,6 +135,7 @@ export async function getStaticProps() {
                   Missionpost1,
                   Missionpost2,
                   Missionpost3,
+                  Businesspost2,
             },
       };
 }

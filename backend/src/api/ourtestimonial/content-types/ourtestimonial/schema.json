@@ -30,6 +30,9 @@
         "files",
         "videos"
       ]
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

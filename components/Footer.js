@@ -238,7 +238,7 @@ export const Footer = () => {
                                                                                     fontSize: 12,
                                                                               }}
                                                                         >
-                                                                              021431990
+                                                                              +923406665578
                                                                         </Typography.Title>
                                                                   </Space>
                                                             </div>

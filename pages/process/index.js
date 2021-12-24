@@ -2,30 +2,55 @@ import Herosection from "/components/common/Herosection";
 import OurTestimonials from "/components/OurTestimonials";
 import WhoWeAre from "/components//WhoWeAre";
 
-const ProcessPage = () => {
+const ProcessPage = ({ HeroData, Whowepost, TestimonialPost }) => {
+      let Hero = HeroData;
+      let whowe = Whowepost;
+      let testimonial = TestimonialPost;
+      const TestimonialData = Object.values(testimonial);
+
+      const Whopost = Object.values(whowe);
+      Whopost[0].attributes.title;
+      const Heropost = Object.values(Hero);
+      Heropost[0].attributes.title;
       return (
             <>
                   <Herosection
-                        title='Our Process'
-                        caption='How do we get Started'
+                        title={Heropost[0].attributes.title}
+                        caption={Heropost[0].attributes.subtitle}
                   />
                   <WhoWeAre
-                        title='Who We Are  '
-                        captiontitle='years in the Rosedale'
-                        caption='15'
-                        content='Its All About You'
+                        title={Whopost[0].attributes.title}
+                        content={Whopost[0].attributes.content}
                   />
                   <OurTestimonials
-                        title='How Does It Start'
-                        content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                        optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-                        obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-                        nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-                        tenetur error,'
+                        title={TestimonialData[0].attributes.title}
+                        content={TestimonialData[0].attributes.content}
+                        caption={TestimonialData[0].attributes.subtitle}
+                        captiontitle={TestimonialData[0].attributes.description}
                   />
             </>
       );
 };
+export async function getStaticProps() {
+      const reshero = await fetch(
+            `${process.env.STRAPI_API_URL}/api/process-hero`
+      );
+      const HeroData = await reshero.json();
+      const reswhowe = await fetch(
+            `${process.env.STRAPI_API_URL}/api/process-whowe`
+      );
+      const Whowepost = await reswhowe.json();
+      const restestimonial = await fetch(
+            `${process.env.STRAPI_API_URL}/api/process-testimonial`
+      );
+      const TestimonialPost = await restestimonial.json();
+
+      return {
+            props: {
+                  HeroData,
+                  Whowepost,
+                  TestimonialPost,
+            },
+      };
+}
 export default ProcessPage;

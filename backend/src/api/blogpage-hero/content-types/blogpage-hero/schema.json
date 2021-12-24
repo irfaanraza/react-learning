@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "blogpage_heroes",
+  "info": {
+    "singularName": "blogpage-hero",
+    "pluralName": "blogpage-heroes",
+    "displayName": "blogpage-hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

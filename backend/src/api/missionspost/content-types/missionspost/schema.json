@@ -4,7 +4,7 @@
   "info": {
     "singularName": "missionspost",
     "pluralName": "missionsposts",
-    "displayName": "home-mission",
+    "displayName": "home-mission-one",
     "description": ""
   },
   "options": {
@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "title1": {
       "type": "string"
     },
-    "content": {
+    "content1": {
       "type": "richtext"
     },
-    "image": {
+    "image1": {
       "type": "media",
       "multiple": false,
       "required": false,

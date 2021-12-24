@@ -16,7 +16,7 @@ import {
 } from "@ant-design/icons";
 import logo from "../public/assets/logo.png";
 
-const GetInTouch = () => {
+const GetInTouch = ({ phone, email, address }) => {
       return (
             <div className='contactus-container'>
                   <div className='container'>
@@ -183,7 +183,7 @@ const GetInTouch = () => {
                                                                               "700",
                                                                   }}
                                                             >
-                                                                  021431990
+                                                                  {phone}
                                                             </Typography.Title>
                                                       </Space>
                                                 </div>
@@ -203,7 +203,7 @@ const GetInTouch = () => {
                                                                               "700",
                                                                   }}
                                                             >
-                                                                  irfan.rza65@gmail.com
+                                                                  {email}
                                                             </Typography.Title>
                                                       </Space>
                                                 </div>
@@ -223,11 +223,7 @@ const GetInTouch = () => {
                                                                               "700",
                                                                   }}
                                                             >
-                                                                  Suit A, 1st
-                                                                  Floor,
-                                                                  Building
-                                                                  6,Rosedale
-                                                                  road Albany
+                                                                  {address}
                                                             </Typography.Title>
                                                       </Space>
                                                 </div>
