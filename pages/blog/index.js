@@ -29,13 +29,17 @@ const BlogPage = ({ BlogPage, HeroText, Card1 }) => {
                         subtitle={Testimonial[0].attributes.subtitle}
                         description={Testimonial[0].attributes.description}
                         content={Testimonial[0].attributes.content}
+                        img={
+                              Testimonial[0].attributes.image.data.attributes
+                                    .url
+                        }
                   />
             </>
       );
 };
 export async function getStaticProps() {
       const response = await fetch(
-            `${process.env.STRAPI_API_URL}/api/blogpage-testimonial`
+            `${process.env.STRAPI_API_URL}/api/blogpage-testimonial?populate=*`
       );
       const BlogPage = await response.json();
 

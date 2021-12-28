@@ -58,10 +58,12 @@ const AboutPage = ({
                   <WhoWeAre
                         title={whowepost[0].attributes.title}
                         content={whowepost[0].attributes.content}
+                        img={whowepost[0].attributes.image.data.attributes.url}
                   />
                   <WhyYouShouldCare
                         title={whypost[0].attributes.title}
                         content={whypost[0].attributes.content}
+                        img={whypost[0].attributes.image.data.attributes.url}
                   />
                   <BusinessHistory
                         titleOne={business[0].attributes.titleOne}
@@ -83,6 +85,10 @@ const AboutPage = ({
                         caption={abouttposts[0].attributes.subtitle}
                         captiontitle={abouttposts[0].attributes.description}
                         content={abouttposts[0].attributes.content}
+                        img={
+                              abouttposts[0].attributes.image.data.attributes
+                                    .url
+                        }
                   />
             </>
       );
@@ -92,15 +98,15 @@ export async function getStaticProps() {
       const res = await fetch(`${process.env.STRAPI_API_URL}/api/herosection`);
       const HeroSectionpost = await res.json();
       const resp = await fetch(
-            `${process.env.STRAPI_API_URL}/api/about-testimonial`
+            `${process.env.STRAPI_API_URL}/api/about-testimonial?populate=*`
       );
       const AboutTestimonialPage = await resp.json();
       const responsewhoweare = await fetch(
-            `${process.env.STRAPI_API_URL}/api/about-whowe`
+            `${process.env.STRAPI_API_URL}/api/about-whowe?populate=*`
       );
       const Whowearepost = await responsewhoweare.json();
       const responsewhycare = await fetch(
-            `${process.env.STRAPI_API_URL}/api/about-whycare`
+            `${process.env.STRAPI_API_URL}/api/about-whycare?populate=*`
       );
       const Whycarepost = await responsewhycare.json();
       const responsebusiness = await fetch(

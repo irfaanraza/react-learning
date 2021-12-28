@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * cardpost service.
+ * about-who service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::cardpost.cardpost');
+module.exports = createCoreService('api::about-who.about-who');

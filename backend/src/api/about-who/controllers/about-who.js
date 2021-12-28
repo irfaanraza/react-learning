@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  cardpost controller
+ *  about-who controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::cardpost.cardpost');
+module.exports = createCoreController('api::about-who.about-who');

@@ -21,12 +21,17 @@ const ProcessPage = ({ HeroData, Whowepost, TestimonialPost }) => {
                   <WhoWeAre
                         title={Whopost[0].attributes.title}
                         content={Whopost[0].attributes.content}
+                        img={Whopost[0].attributes.image.data.attributes.url}
                   />
                   <OurTestimonials
                         title={TestimonialData[0].attributes.title}
                         content={TestimonialData[0].attributes.content}
                         caption={TestimonialData[0].attributes.subtitle}
                         captiontitle={TestimonialData[0].attributes.description}
+                        img={
+                              TestimonialData[0].attributes.image.data
+                                    .attributes.url
+                        }
                   />
             </>
       );
@@ -37,11 +42,11 @@ export async function getStaticProps() {
       );
       const HeroData = await reshero.json();
       const reswhowe = await fetch(
-            `${process.env.STRAPI_API_URL}/api/process-whowe`
+            `${process.env.STRAPI_API_URL}/api/process-whowe?populate=*`
       );
       const Whowepost = await reswhowe.json();
       const restestimonial = await fetch(
-            `${process.env.STRAPI_API_URL}/api/process-testimonial`
+            `${process.env.STRAPI_API_URL}/api/process-testimonial?populate=*`
       );
       const TestimonialPost = await restestimonial.json();
 

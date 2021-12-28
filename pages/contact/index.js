@@ -27,6 +27,10 @@ const ContactPage = ({ ContactHero, ContactTestimonial, ContactDetails }) => {
                         title={Testimonialpost[0].attributes.title}
                         caption={Testimonialpost[0].attributes.subtitle}
                         content={Testimonialpost[0].attributes.content}
+                        img={
+                              Testimonialpost[0].attributes.image.data
+                                    .attributes.url
+                        }
                   />
             </>
       );
@@ -36,7 +40,7 @@ export async function getStaticProps() {
       const res = await fetch(`${process.env.STRAPI_API_URL}/api/contact-hero`);
       const ContactHero = await res.json();
       const responsetestimonial = await fetch(
-            `${process.env.STRAPI_API_URL}/api/contact-testimonial`
+            `${process.env.STRAPI_API_URL}/api/contact-testimonial?populate=*`
       );
       const ContactTestimonial = await responsetestimonial.json();
       const contactresponse = await fetch(

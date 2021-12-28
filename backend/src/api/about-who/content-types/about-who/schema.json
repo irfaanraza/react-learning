@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "cardposts",
+  "collectionName": "about_whos",
   "info": {
-    "singularName": "cardpost",
-    "pluralName": "cardposts",
-    "displayName": "cardpost"
+    "singularName": "about-who",
+    "pluralName": "about-whos",
+    "displayName": "about-who",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,17 +15,18 @@
     "title": {
       "type": "string"
     },
-    "description": {
+    "content": {
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -20,14 +20,18 @@ const TestimonialsPage = ({ TestimonialPagePost }) => {
                   <OurTestimonials
                         title={posts[0].attributes.title}
                         caption={data.title}
-                        captiontitle='Managing Director, Babcock, (NZ) Ltd'
+                        captiontitle={posts[0].attributes.subtitle}
+                        description={posts[0].attributes.description}
                         content={posts[0].attributes.content}
+                        img={posts[0].attributes.image.data.attributes.url}
                   />
             </>
       );
 };
 export async function getStaticProps() {
-      const res = await fetch(`${process.env.STRAPI_API_URL}/api/testimonial`);
+      const res = await fetch(
+            `${process.env.STRAPI_API_URL}/api/testimonial?populate=*`
+      );
       const TestimonialPagePost = await res.json();
       console.log("checking api data:", TestimonialPagePost);
       return {

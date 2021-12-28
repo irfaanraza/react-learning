@@ -4,7 +4,8 @@ import sidebanner from "../public/assets/sidebanner.jpg";
 import imglogo from "../public/assets/imglogo.svg";
 import { Content } from "antd/lib/layout/layout";
 
-const WhyYouShouldCare = ({ title, content }) => {
+const WhyYouShouldCare = ({ title, content, img }) => {
+      console.log("Image checking from WhyCare: ", img);
       return (
             <div className='whycare-container'>
                   <div className='container'>
@@ -12,7 +13,7 @@ const WhyYouShouldCare = ({ title, content }) => {
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <div className='image-container xyz'>
                                           <Image
-                                                src={sidebanner.src}
+                                                src={`http://localhost:1337${img}`}
                                                 preview={false}
                                           />
                                           <div className='text-block-bottom'>

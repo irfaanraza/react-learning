@@ -483,7 +483,7 @@ h6 {
 }
 .image-container .ant-image {
       margin-top: -55px;
-      height: 700px;
+      /* height: 700px; */
       width: 100%;
       position: relative;
 }
@@ -526,17 +526,7 @@ h6 {
       text-align: center;
       padding: 20px 0;
 }
-/* .text-block-bottom-img {
-      object-fit: contain;
-} */
-/* .text-block-bottom-testimonial {
-      position: absolute;
-      bottom: 0;
-      background-color: black;
-      width: 99%;
-      text-align: center;
-      padding: 20px 0;
-} */
+
 .whoweare-container {
       padding: 0 0 75px 5%;
 }

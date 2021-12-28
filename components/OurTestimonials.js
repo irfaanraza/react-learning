@@ -9,6 +9,7 @@ const OurTestimonials = ({
       content,
       description,
       subtitle,
+      img,
 }) => {
       return (
             <div className='testimonials-container'>
@@ -86,7 +87,7 @@ const OurTestimonials = ({
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <div className='ourtestimonials-image-container xyz'>
                                           <Image
-                                                src={testimonial.src}
+                                                src={`http://localhost:1337${img}`}
                                                 preview={false}
                                                 className='testimonial-image'
                                           />

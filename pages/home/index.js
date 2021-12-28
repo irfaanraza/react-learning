@@ -50,8 +50,6 @@ const HomePage = ({
       const Heropost = Object.values(herodata);
       Heropost[0].attributes.title;
 
-      console.log("hero data:", herodata);
-
       return (
             <>
                   <Herosection
@@ -61,10 +59,15 @@ const HomePage = ({
                   <WhoWeAre
                         title={WhoweData[0].attributes.title}
                         content={WhoweData[0].attributes.content}
+                        img={WhoweData[0].attributes.image.data.attributes.url}
                   />
                   <WhyYouShouldCare
                         title={WhyCareData[0].attributes.title}
                         content={WhyCareData[0].attributes.content}
+                        img={
+                              WhyCareData[0].attributes.image.data.attributes
+                                    .url
+                        }
                   />
                   <OurBlogs
                         title={BlogOneData[0].attributes.title}
@@ -92,22 +95,28 @@ const HomePage = ({
                         subtitle={TestimonialPost[0].attributes.subtitle}
                         description={TestimonialPost[0].attributes.description}
                         content={TestimonialPost[0].attributes.content}
+                        subtitle={TestimonialPost[0].attributes.subtitle}
+                        img={
+                              TestimonialPost[0].attributes.image.data
+                                    .attributes.url
+                        }
                   />
             </>
       );
 };
+
 export async function getStaticProps() {
       const heroresponse = await fetch(
             `${process.env.STRAPI_API_URL}/api/herosection`
       );
       const HeroPost = await heroresponse.json();
       const reswhowe = await fetch(
-            `${process.env.STRAPI_API_URL}/api/whoweare`
+            `${process.env.STRAPI_API_URL}/api/whoweare?populate=*`
       );
       const WhowePost = await reswhowe.json();
 
       const reswhycare = await fetch(
-            `${process.env.STRAPI_API_URL}/api/whycare`
+            `${process.env.STRAPI_API_URL}/api/whycare?populate=*`
       );
       const WhyCarePost = await reswhycare.json();
 
@@ -142,7 +151,7 @@ export async function getStaticProps() {
       const MissionPost3 = await missionthree.json();
 
       const response = await fetch(
-            `${process.env.STRAPI_API_URL}/api/ourtestimonial`
+            `${process.env.STRAPI_API_URL}/api/ourtestimonial?populate=*`
       );
       const TestimonialPage = await response.json();
 
