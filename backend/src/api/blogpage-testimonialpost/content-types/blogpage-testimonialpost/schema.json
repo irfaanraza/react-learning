@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogpage_testimonialposts",
+  "info": {
+    "singularName": "blogpage-testimonialpost",
+    "pluralName": "blogpage-testimonialposts",
+    "displayName": "Blogpage-testimonialpost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

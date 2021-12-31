@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_whycareposts",
+  "info": {
+    "singularName": "home-whycarepost",
+    "pluralName": "home-whycareposts",
+    "displayName": "Home-whycarepost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

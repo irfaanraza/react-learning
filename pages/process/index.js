@@ -3,13 +3,12 @@ import OurTestimonials from "/components/OurTestimonials";
 import WhoWeAre from "/components//WhoWeAre";
 
 const ProcessPage = ({ HeroData, Whowepost, TestimonialPost }) => {
-      let Hero = HeroData;
-      let whowe = Whowepost;
-      let testimonial = TestimonialPost;
-      const TestimonialData = Object.values(testimonial);
+      const Hero = HeroData;
+      const whowe = Whowepost;
+      const WhoweData = whowe.data;
+      const testimonial = TestimonialPost;
+      const TestimonialData = testimonial.data;
 
-      const Whopost = Object.values(whowe);
-      Whopost[0].attributes.title;
       const Heropost = Object.values(Hero);
       Heropost[0].attributes.title;
       return (
@@ -18,21 +17,14 @@ const ProcessPage = ({ HeroData, Whowepost, TestimonialPost }) => {
                         title={Heropost[0].attributes.title}
                         caption={Heropost[0].attributes.subtitle}
                   />
-                  <WhoWeAre
-                        title={Whopost[0].attributes.title}
-                        content={Whopost[0].attributes.content}
-                        img={Whopost[0].attributes.image.data.attributes.url}
-                  />
-                  <OurTestimonials
-                        title={TestimonialData[0].attributes.title}
-                        content={TestimonialData[0].attributes.content}
-                        caption={TestimonialData[0].attributes.subtitle}
-                        captiontitle={TestimonialData[0].attributes.description}
-                        img={
-                              TestimonialData[0].attributes.image.data
-                                    .attributes.url
-                        }
-                  />
+                  {WhoweData.map((post) => {
+                        return <WhoWeAre data={post.attributes} />;
+                  })}
+                  {TestimonialData.map((post) => {
+                        return (
+                              <OurTestimonials testimonial={post.attributes} />
+                        );
+                  })}
             </>
       );
 };
@@ -42,11 +34,11 @@ export async function getStaticProps() {
       );
       const HeroData = await reshero.json();
       const reswhowe = await fetch(
-            `${process.env.STRAPI_API_URL}/api/process-whowe?populate=*`
+            `${process.env.STRAPI_API_URL}/api/process-whoweposts?populate=*`
       );
       const Whowepost = await reswhowe.json();
       const restestimonial = await fetch(
-            `${process.env.STRAPI_API_URL}/api/process-testimonial?populate=*`
+            `${process.env.STRAPI_API_URL}/api/process-testimonialposts?populate=*`
       );
       const TestimonialPost = await restestimonial.json();
 

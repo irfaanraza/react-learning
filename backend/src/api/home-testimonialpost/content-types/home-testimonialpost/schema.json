@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_testimonialposts",
+  "info": {
+    "singularName": "home-testimonialpost",
+    "pluralName": "home-testimonialposts",
+    "displayName": "Home-testimonialpost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_whoweposts",
+  "info": {
+    "singularName": "about-whowepost",
+    "pluralName": "about-whoweposts",
+    "displayName": "about-whowepost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

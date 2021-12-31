@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_blogsposts",
+  "info": {
+    "singularName": "home-blogspost",
+    "pluralName": "home-blogsposts",
+    "displayName": "Home-blogspost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

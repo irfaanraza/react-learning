@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_missionsposts",
+  "info": {
+    "singularName": "about-missionspost",
+    "pluralName": "about-missionsposts",
+    "displayName": "About-missionspost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

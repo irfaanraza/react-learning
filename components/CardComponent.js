@@ -2,8 +2,8 @@ import { Card, Row, Col, Divider } from "antd";
 
 const { Meta } = Card;
 
-const CardComponent = (props) => {
-      console.log("props data:", props.title);
+const CardComponent = ({ blog }) => {
+      console.log("from Card Component:");
       return (
             <Col xs={24} sm={24} md={6} lg={6} xl={8}>
                   <Card
@@ -12,17 +12,19 @@ const CardComponent = (props) => {
                         cover={
                               <img
                                     alt='example'
-                                    src={props.blog.img.src}
+                                    src={`http://localhost:1337${blog.attributes.cover.data[0].attributes.url}`}
                                     width='400'
                                     height='300'
                               />
                         }
                   >
                         <Meta
-                              title={props.blog.title}
-                              description={props.blog.content}
-                              user={props.blog.user}
-                              date={props.blog.date}
+                              // title={title}
+                              // description={description}
+                              title={blog.attributes.title}
+                              description={blog.attributes.description}
+                              // user={props.blog.user}
+                              // date={props.blog.date}
                         />
                   </Card>
             </Col>

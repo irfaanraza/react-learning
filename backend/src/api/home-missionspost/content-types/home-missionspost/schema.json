@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_missionsposts",
+  "info": {
+    "singularName": "home-missionspost",
+    "pluralName": "home-missionsposts",
+    "displayName": "Home-missionspost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

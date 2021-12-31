@@ -479,7 +479,9 @@ h6 {
 }
 .ourtestimonials-image-container .ant-image {
       width: 100%;
-      margin-top: -110px;
+      margin-top: -110px !important;
+      object-fit: contain;
+      min-height: 700px;
 }
 .image-container .ant-image {
       margin-top: -55px;
@@ -543,4 +545,10 @@ h6 {
 }
 .blog p {
       text-align: justify;
+}
+
+.testimonial-carousel {
+      min-height: 100%;
+}
+.carousel {
 }

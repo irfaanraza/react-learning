@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "process_whoweposts",
+  "info": {
+    "singularName": "process-whowepost",
+    "pluralName": "process-whoweposts",
+    "displayName": "Process-whowepost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,14 +1,10 @@
 import Herosection from "/components/common/Herosection";
 import OurTestimonials from "/components/OurTestimonials";
-
+import { Carousel, Row, Col, Button } from "antd";
 const TestimonialsPage = ({ TestimonialPagePost }) => {
       let data = TestimonialPagePost;
-      // console.log("checking api data from testimonials:", data);
-
-      const posts = Object.values(data);
-      posts[0].attributes.title;
-      // console.log("data from api:", posts);
-      // console.log("data from api post[0]:", posts[0].attributes.title);
+      console.log("checking api data from testimonials:", data.data);
+      const posts = data.data;
 
       return (
             <>
@@ -16,24 +12,35 @@ const TestimonialsPage = ({ TestimonialPagePost }) => {
                         title='Testimonials'
                         caption='How Do We Get Started ?'
                   />
-
-                  <OurTestimonials
-                        title={posts[0].attributes.title}
-                        caption={data.title}
-                        captiontitle={posts[0].attributes.subtitle}
-                        description={posts[0].attributes.description}
-                        content={posts[0].attributes.content}
-                        img={posts[0].attributes.image.data.attributes.url}
-                  />
+                  <Carousel className='testimonial-carousel'>
+                        {posts.map((post) => {
+                              return (
+                                    <OurTestimonials
+                                          testimonial={post.attributes}
+                                    />
+                              );
+                        })}
+                  </Carousel>
+                  <Row>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                              <div className='contactus'>
+                                    <h1>Chat With Us?</h1>
+                                    <Button className='btncontact'>
+                                          Contact Us
+                                    </Button>
+                                    <h1>021431990</h1>
+                              </div>
+                        </Col>
+                  </Row>
             </>
       );
 };
 export async function getStaticProps() {
       const res = await fetch(
-            `${process.env.STRAPI_API_URL}/api/testimonial?populate=*`
+            `${process.env.STRAPI_API_URL}/api/testimonialpages?populate=*`
       );
       const TestimonialPagePost = await res.json();
-      console.log("checking api data:", TestimonialPagePost);
+
       return {
             props: {
                   TestimonialPagePost,

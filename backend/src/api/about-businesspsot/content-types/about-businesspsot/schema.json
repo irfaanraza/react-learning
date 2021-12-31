@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_businesspsots",
+  "info": {
+    "singularName": "about-businesspsot",
+    "pluralName": "about-businesspsots",
+    "displayName": "about-businesspost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

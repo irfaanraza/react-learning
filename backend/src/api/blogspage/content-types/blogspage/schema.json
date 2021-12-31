@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogspages",
+  "info": {
+    "singularName": "blogspage",
+    "pluralName": "blogspages",
+    "displayName": "Blogspage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

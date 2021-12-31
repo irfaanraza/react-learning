@@ -2,28 +2,21 @@ import { Row, Col, Divider, Image, Button } from "antd";
 import testimonial from "../public/assets/testimonial.jpg";
 import imglogo from "../public/assets/imglogo.svg";
 
-const OurTestimonials = ({
-      title,
-      caption,
-      captiontitle,
-      content,
-      description,
-      subtitle,
-      img,
-}) => {
+const OurTestimonials = ({ testimonial }) => {
       return (
             <div className='testimonials-container'>
                   <div className='container'>
                         <Row gutter={10}>
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                                    <h1> {title}</h1>
-                                    <h2>{subtitle}</h2>
-                                    <h3>{description}</h3>
-                                    <h3> {caption}</h3>
-                                    <h5>{captiontitle}</h5>
+                                    <h1> {testimonial.title}</h1>
+                                    <h2>{testimonial.subtitle}</h2>
+                                    <h3>{testimonial.description}</h3>
+                                    <h3> {testimonial.caption}</h3>
+                                    <h5>{testimonial.captiontitle}</h5>
 
-                                    <p>{content}</p>
-                                    <div
+                                    <p>{testimonial.content}</p>
+
+                                    {/* <div
                                           style={{
                                                 display: "flex",
                                                 justifyContent: "center",
@@ -81,13 +74,13 @@ const OurTestimonials = ({
                                                       }}
                                                 />
                                           </div>
-                                    </div>
+                                    </div> */}
                               </Col>
 
                               <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                     <div className='ourtestimonials-image-container xyz'>
                                           <Image
-                                                src={`http://localhost:1337${img}`}
+                                                src={`http://localhost:1337${testimonial.image.data[0].attributes.url}`}
                                                 preview={false}
                                                 className='testimonial-image'
                                           />
@@ -97,16 +90,6 @@ const OurTestimonials = ({
                                                       className='text-block-bottom-img'
                                                 />
                                           </div>
-                                    </div>
-                              </Col>
-
-                              <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-                                    <div className='contactus'>
-                                          <h1>Chat With Us?</h1>
-                                          <Button className='btncontact'>
-                                                Contact Us
-                                          </Button>
-                                          <h1>021431990</h1>
                                     </div>
                               </Col>
                         </Row>
